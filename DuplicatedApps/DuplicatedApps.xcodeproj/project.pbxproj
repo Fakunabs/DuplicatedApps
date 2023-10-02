@@ -15,6 +15,7 @@
 		1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A172ACAA4CF009824D5 /* AppImages.swift */; };
 		1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */; };
 		1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */; };
+		1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */; };
 		1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */; };
 		1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		1C1E9A172ACAA4CF009824D5 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenSlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenSlideCollectionViewCell.xib; sourceTree = "<group>"; };
+		1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-biennale-medium.otf"; sourceTree = "<group>"; };
 		1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 			children = (
 				1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */,
 				1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */,
+				1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */,
 				490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */,
 				1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */,
 				1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */,

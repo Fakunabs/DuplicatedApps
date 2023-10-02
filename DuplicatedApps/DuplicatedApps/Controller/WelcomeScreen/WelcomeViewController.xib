@@ -5,18 +5,18 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Inter-Medium.ttf">
-            <string>Inter-Medium</string>
+        <array key="Fontspring-DEMO-biennale-medium.otf">
+            <string>FONTSPRINGDEMO-BiennaleMediumRegular</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="DuplicatedApps" customModuleProvider="target">
             <connections>
                 <outlet property="homeScreenSlideCollectionView" destination="bVS-Cm-DYm" id="GMU-4I-Wrp"/>
+                <outlet property="slidePageControl" destination="39X-Bh-D5V" id="SDK-2R-S8y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,62 +25,62 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xo2-89-5NN">
-                    <rect key="frame" x="-16" y="-17" width="430" height="930"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfQ-8O-mHJ">
-                    <rect key="frame" x="30" y="796" width="354" height="55"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="55" id="ByU-Hm-NjM"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="20"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Get Started" backgroundImage="background-button"/>
-                </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-Cm-DYm">
-                    <rect key="frame" x="0.0" y="164.5" width="414" height="622.5"/>
-                    <color key="backgroundColor" red="0.19215686274509802" green="0.14117647058823529" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SjH-qw-bIs">
-                        <size key="itemSize" width="414" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ToN-fd-ISf">
                     <rect key="frame" x="145" y="40" width="124" height="119.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ToN-fd-ISf" secondAttribute="height" multiplier="133:128" id="XLT-Uw-zUk"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfQ-8O-mHJ">
+                    <rect key="frame" x="30" y="796" width="354" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="ByU-Hm-NjM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="21"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Get Started" backgroundImage="background-button"/>
+                    <connections>
+                        <action selector="didTapGetStartedButton:" destination="-1" eventType="touchUpInside" id="W1X-ic-st8"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-Cm-DYm">
+                    <rect key="frame" x="0.0" y="164.5" width="414" height="622.5"/>
+                    <color key="backgroundColor" red="0.19215686274509802" green="0.14117647058823529" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bi9-Jm-vfe">
+                        <size key="itemSize" width="414" height="622"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="39X-Bh-D5V">
+                    <rect key="frame" x="149" y="760" width="117" height="26"/>
+                    <color key="pageIndicatorTintColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.24313725490196078" green="0.30980392156862746" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.19215686274509802" green="0.14117647058823529" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="xo2-89-5NN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-17" id="Bje-1q-tFR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="39X-Bh-D5V" secondAttribute="trailing" constant="148" id="9zk-45-vOd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ToN-fd-ISf" secondAttribute="trailing" constant="145" id="KRM-b9-2r0"/>
+                <constraint firstItem="39X-Bh-D5V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="149" id="PSh-Op-Rm3"/>
                 <constraint firstItem="ToN-fd-ISf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="Tv9-Fu-hsD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QfQ-8O-mHJ" secondAttribute="trailing" constant="30" id="Ug8-Eb-rY3"/>
                 <constraint firstItem="QfQ-8O-mHJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="VQO-N3-nr1"/>
-                <constraint firstAttribute="bottom" secondItem="xo2-89-5NN" secondAttribute="bottom" constant="-17" id="X7m-NO-Psp"/>
                 <constraint firstItem="QfQ-8O-mHJ" firstAttribute="top" secondItem="bVS-Cm-DYm" secondAttribute="bottom" constant="9" id="Xk1-5k-iuY"/>
                 <constraint firstItem="bVS-Cm-DYm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Y3Z-UW-fQq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QfQ-8O-mHJ" secondAttribute="bottom" constant="11" id="bWc-b7-hLN"/>
-                <constraint firstItem="xo2-89-5NN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-16" id="dML-hp-LRn"/>
                 <constraint firstItem="bVS-Cm-DYm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="guK-6n-vgw"/>
                 <constraint firstItem="ToN-fd-ISf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="hWz-Co-syQ"/>
                 <constraint firstItem="bVS-Cm-DYm" firstAttribute="top" secondItem="ToN-fd-ISf" secondAttribute="bottom" constant="5" id="ngQ-tn-Ey7"/>
-                <constraint firstItem="xo2-89-5NN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="znD-3M-Y7P"/>
+                <constraint firstItem="QfQ-8O-mHJ" firstAttribute="top" secondItem="39X-Bh-D5V" secondAttribute="bottom" constant="10" id="xcL-DJ-Aor"/>
             </constraints>
             <point key="canvasLocation" x="56.521739130434788" y="-12.723214285714285"/>
         </view>
     </objects>
     <resources>
-        <image name="background" width="1500" height="3248"/>
         <image name="background-button" width="1256" height="200"/>
         <image name="homescreen-icon" width="384" height="384"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
