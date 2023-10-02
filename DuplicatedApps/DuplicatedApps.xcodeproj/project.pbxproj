@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C113F5E2ACAC5B10010E79F /* Slide.swift */; };
+		1C113F612ACAC5E40010E79F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C113F602ACAC5E40010E79F /* Slide.xib */; };
+		1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */; };
+		1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */; };
+		1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */; };
+		1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A172ACAA4CF009824D5 /* AppImages.swift */; };
+		1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */; };
+		1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */; };
+		1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */; };
+		1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
 		490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B12AC412880067EF05 /* SceneDelegate.swift */; };
 		490956B42AC412880067EF05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B32AC412880067EF05 /* ViewController.swift */; };
@@ -14,9 +24,21 @@
 		490956BA2AC412880067EF05 /* DuplicatedApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 490956B82AC412880067EF05 /* DuplicatedApps.xcdatamodeld */; };
 		490956BC2AC412880067EF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490956BB2AC412880067EF05 /* Assets.xcassets */; };
 		490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490956BD2AC412880067EF05 /* LaunchScreen.storyboard */; };
+		CDDD9B5896B18D4955D8911A /* Pods_DuplicatedApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6121DC98738B32C2F37993C /* Pods_DuplicatedApps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032C4A4164A655EEA1528E03 /* Pods-DuplicatedApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuplicatedApps.debug.xcconfig"; path = "Target Support Files/Pods-DuplicatedApps/Pods-DuplicatedApps.debug.xcconfig"; sourceTree = "<group>"; };
+		1C113F5E2ACAC5B10010E79F /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		1C113F602ACAC5E40010E79F /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		1C1E9A172ACAA4CF009824D5 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenSlideCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenSlideCollectionViewCell.xib; sourceTree = "<group>"; };
+		1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490956AF2AC412880067EF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		490956B12AC412880067EF05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +48,8 @@
 		490956BB2AC412880067EF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490956BE2AC412880067EF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490956C02AC412880067EF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523EF925768B00070C3F7638 /* Pods-DuplicatedApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuplicatedApps.release.xcconfig"; path = "Target Support Files/Pods-DuplicatedApps/Pods-DuplicatedApps.release.xcconfig"; sourceTree = "<group>"; };
+		F6121DC98738B32C2F37993C /* Pods_DuplicatedApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuplicatedApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDD9B5896B18D4955D8911A /* Pods_DuplicatedApps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C113F592ACAC0EC0010E79F /* WelcomScreenSlide */ = {
+			isa = PBXGroup;
+			children = (
+				1C113F5E2ACAC5B10010E79F /* Slide.swift */,
+				1C113F602ACAC5E40010E79F /* Slide.xib */,
+			);
+			path = WelcomScreenSlide;
+			sourceTree = "<group>";
+		};
+		1C1E9A0C2ACAA1CC009824D5 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1C74AF522ACB1107001C28E3 /* cell */,
+				1C113F592ACAC0EC0010E79F /* WelcomScreenSlide */,
+				1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */,
+				1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */,
+			);
+			path = WelcomeScreen;
+			sourceTree = "<group>";
+		};
+		1C1E9A0D2ACAA1DB009824D5 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		1C1E9A0E2ACAA242009824D5 /* SignUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUpScreen;
+			sourceTree = "<group>";
+		};
+		1C1E9A132ACAA2F8009824D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C1E9A162ACAA4B5009824D5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E9A172ACAA4CF009824D5 /* AppImages.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1C74AF522ACB1107001C28E3 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */,
+				1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		1C7D63BB2ACAB1E800E26C51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D63BD2ACAB26000E26C51 /* font */,
+				490956BB2AC412880067EF05 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C7D63BC2ACAB21700E26C51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E9A0E2ACAA242009824D5 /* SignUpScreen */,
+				1C1E9A0D2ACAA1DB009824D5 /* LoginScreen */,
+				1C1E9A0C2ACAA1CC009824D5 /* WelcomeScreen */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C7D63BD2ACAB26000E26C51 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */,
+				1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		490956A32AC412870067EF05 = {
 			isa = PBXGroup;
 			children = (
 				490956AE2AC412880067EF05 /* DuplicatedApps */,
 				490956AD2AC412880067EF05 /* Products */,
+				65E1F9592DC9B8E6FD8E5D95 /* Pods */,
+				B6C265F3CE051AEC7C5BCD66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +172,36 @@
 		490956AE2AC412880067EF05 /* DuplicatedApps */ = {
 			isa = PBXGroup;
 			children = (
+				1C7D63BC2ACAB21700E26C51 /* Controller */,
+				1C7D63BB2ACAB1E800E26C51 /* Resources */,
+				1C1E9A162ACAA4B5009824D5 /* Constants */,
+				1C1E9A132ACAA2F8009824D5 /* Extensions */,
 				490956AF2AC412880067EF05 /* AppDelegate.swift */,
 				490956B12AC412880067EF05 /* SceneDelegate.swift */,
 				490956B32AC412880067EF05 /* ViewController.swift */,
 				490956B52AC412880067EF05 /* Main.storyboard */,
-				490956BB2AC412880067EF05 /* Assets.xcassets */,
 				490956BD2AC412880067EF05 /* LaunchScreen.storyboard */,
 				490956C02AC412880067EF05 /* Info.plist */,
 				490956B82AC412880067EF05 /* DuplicatedApps.xcdatamodeld */,
 			);
 			path = DuplicatedApps;
+			sourceTree = "<group>";
+		};
+		65E1F9592DC9B8E6FD8E5D95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				032C4A4164A655EEA1528E03 /* Pods-DuplicatedApps.debug.xcconfig */,
+				523EF925768B00070C3F7638 /* Pods-DuplicatedApps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6C265F3CE051AEC7C5BCD66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6121DC98738B32C2F37993C /* Pods_DuplicatedApps.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 490956C32AC412880067EF05 /* Build configuration list for PBXNativeTarget "DuplicatedApps" */;
 			buildPhases = (
+				0D077210B25EF46DE5D6AEC3 /* [CP] Check Pods Manifest.lock */,
 				490956A82AC412880067EF05 /* Sources */,
 				490956A92AC412880067EF05 /* Frameworks */,
 				490956AA2AC412880067EF05 /* Resources */,
@@ -129,12 +264,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */,
+				1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */,
+				1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */,
+				1C113F612ACAC5E40010E79F /* Slide.xib in Resources */,
 				490956BC2AC412880067EF05 /* Assets.xcassets in Resources */,
+				1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */,
+				1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */,
 				490956B72AC412880067EF05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D077210B25EF46DE5D6AEC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuplicatedApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		490956A82AC412880067EF05 /* Sources */ = {
@@ -142,9 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
+				1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */,
+				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
 				490956B02AC412880067EF05 /* AppDelegate.swift in Sources */,
 				490956BA2AC412880067EF05 /* DuplicatedApps.xcdatamodeld in Sources */,
 				490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */,
+				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
+				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
+				1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +456,13 @@
 		};
 		490956C42AC412880067EF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032C4A4164A655EEA1528E03 /* Pods-DuplicatedApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YN9674B5Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DuplicatedApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -298,6 +470,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,11 +486,13 @@
 		};
 		490956C52AC412880067EF05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 523EF925768B00070C3F7638 /* Pods-DuplicatedApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YN9674B5Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DuplicatedApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +500,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
