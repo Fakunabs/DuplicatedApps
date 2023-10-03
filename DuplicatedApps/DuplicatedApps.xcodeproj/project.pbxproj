@@ -13,6 +13,9 @@
 		1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */; };
 		1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */; };
 		1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A172ACAA4CF009824D5 /* AppImages.swift */; };
+		1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */; };
+		1C5F60D22ACBCA87001D1391 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */; };
+		1C5F60D42ACBF0DB001D1391 /* TTHoves-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */; };
 		1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */; };
 		1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */; };
 		1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */; };
@@ -36,6 +39,9 @@
 		1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		1C1E9A172ACAA4CF009824D5 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTHoves-DemiBold.ttf"; sourceTree = "<group>"; };
 		1C74AF532ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenSlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C74AF542ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenSlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-biennale-medium.otf"; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 		1C1E9A0D2ACAA1DB009824D5 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */,
+				1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */,
+				1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */,
 				1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */,
 				1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */,
 			);
@@ -266,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5F60D22ACBCA87001D1391 /* LoginViewController.xib in Resources */,
 				1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */,
 				490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */,
 				1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */,
@@ -275,6 +285,7 @@
 				1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */,
 				1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */,
 				490956B72AC412880067EF05 /* Main.storyboard in Resources */,
+				1C5F60D42ACBF0DB001D1391 /* TTHoves-DemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +329,7 @@
 				490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */,
 				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
 				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
+				1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */,
 				1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

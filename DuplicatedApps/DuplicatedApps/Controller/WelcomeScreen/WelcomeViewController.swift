@@ -23,7 +23,8 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBAction func didTapGetStartedButton(_ sender: Any) {
-        
+        let loginViewController = LoginViewController()
+        self.navigationController?.pushViewController(loginViewController, animated: true)
     }
     
     override func viewDidLoad() {
