@@ -9,12 +9,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    struct Constant {
+        static let createAccount = "or Create Account"
+    }
     
-    @IBOutlet weak var loginTextFieldBackgroundImageView: UIImageView!
+    @IBOutlet weak var loginTextFieldView: UIView!
+    @IBOutlet weak var createAccountLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTextFieldBackgroud()
+        configCreateAccountText()
     }
 }
 
@@ -22,7 +27,22 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     private func configTextFieldBackgroud() {
-        loginTextFieldBackgroundImageView.layer.cornerRadius = 50
+        loginTextFieldView.layer.cornerRadius = 50
     }
     
+    private func configCreateAccountText() {
+        let createAccountText = Constant.createAccount
+        let attributedString = NSMutableAttributedString(string: createAccountText)
+        let range = (attributedString.string as NSString).range(of: "Create Account")
+        attributedString.addAttributes([ .underlineStyle: NSUnderlineStyle.single.rawValue], range: range)
+        createAccountLabel.attributedText = attributedString
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleCreateAccountTap))
+            createAccountLabel.isUserInteractionEnabled = true
+            createAccountLabel.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func handleCreateAccountTap() {
+        print("a")
+        // Thêm mã xử lý bạn muốn thực hiện khi người dùng chạm vào "Create Account" ở đây
+    }
 }
