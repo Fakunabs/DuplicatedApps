@@ -42,7 +42,7 @@ extension LoginViewController {
     }
     
     @objc private func handleCreateAccountTap() {
-        print("a")
-        // Thêm mã xử lý bạn muốn thực hiện khi người dùng chạm vào "Create Account" ở đây
+        let signUpViewController = SignUpViewController()
+        self.navigationController?.pushViewController(signUpViewController, animated: true)
     }
 }

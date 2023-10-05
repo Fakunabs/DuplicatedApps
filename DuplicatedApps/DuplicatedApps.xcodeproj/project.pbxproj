@@ -21,6 +21,8 @@
 		1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */; };
 		1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */; };
 		1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */; };
+		1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9886CD2ACD8692001750CF /* SignUpViewController.swift */; };
+		1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9886CE2ACD8692001750CF /* SignUpViewController.xib */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
 		490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B12AC412880067EF05 /* SceneDelegate.swift */; };
 		490956B42AC412880067EF05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B32AC412880067EF05 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontspring-DEMO-biennale-medium.otf"; sourceTree = "<group>"; };
 		1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		1C9886CD2ACD8692001750CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1C9886CE2ACD8692001750CF /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490956AF2AC412880067EF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		490956B12AC412880067EF05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		1C1E9A0E2ACAA242009824D5 /* SignUpScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1C9886CD2ACD8692001750CF /* SignUpViewController.swift */,
+				1C9886CE2ACD8692001750CF /* SignUpViewController.xib */,
 			);
 			path = SignUpScreen;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 				1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */,
 				1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */,
 				490956B72AC412880067EF05 /* Main.storyboard in Resources */,
+				1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */,
 				1C5F60D42ACBF0DB001D1391 /* TTHoves-DemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */,
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
 				1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */,
 				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
