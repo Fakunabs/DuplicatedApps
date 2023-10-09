@@ -39,6 +39,7 @@ class AuthService {
                     "email": email
                 ]) { error in
                     if let error = error {
+                        print(error.localizedDescription)
                         completion(false, error)
                         return
                     }
