@@ -5,11 +5,10 @@
 //  Created by Fakunabs on 06/10/2023.
 //
 
-import Foundation
 import UIKit
+import Foundation
 
 class BaseViewController : UIViewController {
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -17,10 +16,20 @@ class BaseViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpNavigationBar()
     }
     
 }
 
+// MARK : - Navigation Bar
+extension BaseViewController {
+    private func setUpNavigationBar() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = AppColors.heliotrope
+    }
+}
+
+// MARK : - Keyboard Handling
 extension BaseViewController {
     func configureTapGestureToDismissKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -31,9 +40,9 @@ extension BaseViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
 }
 
+// MARK : - Keyboard Handling
 extension BaseViewController {
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -46,3 +55,5 @@ extension BaseViewController {
         view.endEditing(true)
     }
 }
+
+

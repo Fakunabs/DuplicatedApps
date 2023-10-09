@@ -7,17 +7,14 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
 
-    @IBOutlet weak var signUpBackgroundView: UIView!
+    @IBOutlet private weak var signUpBackgroundView: UIView!
+    @IBOutlet private weak var emailSignUpTextField: UITextField!
+    @IBOutlet private weak var usernameSignUpTextField: UITextField!
+    @IBOutlet private weak var passwordSignUpTextField: UITextField!
     
-    @IBOutlet weak var emailSignUpTextField: UITextField!
-    
-    @IBOutlet weak var usernameSignUpTextField: UITextField!
-    
-    @IBOutlet weak var passwordSignUpTextField: UITextField!
-    
-    @IBAction func didTapSignUpAction(_ sender: Any) {
+    @IBAction private func didTapSignUpAction(_ sender: Any) {
         let registerUserRequest = RegisterUserRequest(
             username: self.usernameSignUpTextField.text ?? "",
             email: self.emailSignUpTextField.text ?? "",
@@ -39,8 +36,6 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        print(registerUserRequest)
-        
         AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
             guard let self = self else { return }
             
@@ -58,6 +53,7 @@ class SignUpViewController: UIViewController {
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configSignUpBackgroundView()
@@ -65,8 +61,8 @@ class SignUpViewController: UIViewController {
 
 }
 
+// MARK: - Setup Signup Background Textfield
 extension SignUpViewController {
-    
     private func configSignUpBackgroundView() {
         signUpBackgroundView.layer.cornerRadius = 50
     }

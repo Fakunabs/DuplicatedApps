@@ -164,10 +164,10 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKi-ry-f4n">
-                            <rect key="frame" x="170" y="507.33333333333337" width="50" height="40"/>
+                            <rect key="frame" x="157.66666666666666" y="507.33333333333337" width="75" height="60"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="Rz0-Jc-yR6"/>
-                                <constraint firstAttribute="width" constant="50" id="kLF-3v-1PU"/>
+                                <constraint firstAttribute="height" constant="60" id="Rz0-Jc-yR6"/>
+                                <constraint firstAttribute="width" constant="75" id="kLF-3v-1PU"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" backgroundImage="login-apple-button"/>

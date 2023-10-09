@@ -143,7 +143,7 @@
                                         <constraint firstAttribute="height" constant="53" id="vgH-rW-j1e"/>
                                     </constraints>
                                     <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="16"/>
+                                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrC-Qj-Trq">
@@ -154,7 +154,7 @@
                                         <constraint firstAttribute="height" constant="53" id="dJV-Ve-irN"/>
                                     </constraints>
                                     <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="16"/>
+                                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-textfield-unmask-pw" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-Dp-fhD">

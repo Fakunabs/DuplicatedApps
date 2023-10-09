@@ -36,7 +36,8 @@ class AuthService {
                 .document(resultUser.uid)
                 .setData([
                     "username": username,
-                    "email": email
+                    "email": email,
+                    "password" : password
                 ]) { error in
                     if let error = error {
                         print(error.localizedDescription)
@@ -47,6 +48,7 @@ class AuthService {
                 }
         }
     }
+    
     public func signIn(with userRequest: LoginUserRequest, completion: @escaping (Error?) -> Void) {
         Auth.auth().signIn(
             withEmail: userRequest.email,
@@ -61,12 +63,11 @@ class AuthService {
     }
     
     public func signOut(completion: @escaping (Error?)->Void) {
-            do {
-                try Auth.auth().signOut()
-                completion(nil)
-            } catch let error {
-                completion(error)
-            }
+        do {
+            try Auth.auth().signOut()
+            completion(nil)
+        } catch let error {
+            completion(error)
         }
-    
+    }
 }

@@ -12,23 +12,26 @@ class LoginViewController: BaseViewController {
     struct Constant {
         static let createAccount = "or Create Account"
     }
+    
     private var isPasswordHidden = true
-    var panGestureRecognizer: UIPanGestureRecognizer?
-    var initialTouchPoint: CGPoint = CGPoint(x: 0, y: 0)
-    @IBOutlet weak var loginTextFieldView: UIView!
-    @IBOutlet weak var createAccountLabel: UILabel!
-    
-    @IBOutlet weak var emailLoginTextField: UITextField!
-    @IBOutlet weak var passwordLoginTextField: UITextField!
-    @IBOutlet weak var viewBottomConstraint: NSLayoutConstraint!
+    private var panGestureRecognizer: UIPanGestureRecognizer?
+    private var initialTouchPoint: CGPoint = CGPoint(x: 0, y: 0)
     
     
-    @IBAction func didTapShowPasswordAction(_ sender: Any) {
+    @IBOutlet private weak var loginTextFieldView: UIView!
+    @IBOutlet private weak var createAccountLabel: UILabel!
+    
+    @IBOutlet private weak var emailLoginTextField: UITextField!
+    @IBOutlet private weak var passwordLoginTextField: UITextField!
+    @IBOutlet private weak var viewBottomConstraint: NSLayoutConstraint!
+    
+    
+    @IBAction private func didTapShowPasswordAction(_ sender: Any) {
         togglePasswordVisibility()
     }
     
     
-    @IBAction func didTapSignInAction(_ sender: Any) {
+    @IBAction private func didTapSignInAction(_ sender: Any) {
         let loginRequest = LoginUserRequest(
             email: self.emailLoginTextField.text ?? "",
             password: self.passwordLoginTextField.text ?? ""
@@ -49,12 +52,9 @@ class LoginViewController: BaseViewController {
                 AlertManager.showSignInErrorAlert(on: self, with: error)
                 return
             }
-            
             let newViewController = NewViewController()
             self.navigationController?.pushViewController(newViewController, animated: true)
-            
         }
-        
     }
     
     override func viewDidLoad() {
@@ -63,12 +63,6 @@ class LoginViewController: BaseViewController {
         configCreateAccountText()
         registerForKeyboardNotifications()
         setUpTextField(passwordLoginTextField, isSecureTextEntry: true)
-        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-        self.view.addGestureRecognizer(panGestureRecognizer)
-        
-        // Đảm bảo màn hình B luôn nằm trên màn hình A
-        self.view.window?.windowLevel = .normal
-        
     }
     
     override func keyboardWillHide(notification: NSNotification) {
@@ -86,14 +80,31 @@ class LoginViewController: BaseViewController {
     }
 }
 
-
+// MARK: - Setup TextField Background
 extension LoginViewController {
     
     private func configTextFieldBackgroud() {
         loginTextFieldView.layer.cornerRadius = 50
         loginTextFieldView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
+}
+
+// MARK: - Setup Text Field
+extension LoginViewController {
     
+    private func setUpTextField(_ textField: UITextField, isSecureTextEntry: Bool) {
+        textField.delegate = self
+        textField.isSecureTextEntry = isSecureTextEntry
+    }
+    
+    private func togglePasswordVisibility() {
+        isPasswordHidden.toggle()
+        passwordLoginTextField.isSecureTextEntry = isPasswordHidden
+    }
+}
+
+// MARK: - Handle Create Account Tap
+extension LoginViewController {
     private func configCreateAccountText() {
         let createAccountText = Constant.createAccount
         let attributedString = NSMutableAttributedString(string: createAccountText)
@@ -109,44 +120,9 @@ extension LoginViewController {
         let signUpViewController = SignUpViewController()
         self.navigationController?.pushViewController(signUpViewController, animated: true)
     }
-    
-    private func togglePasswordVisibility() {
-        isPasswordHidden.toggle()
-        passwordLoginTextField.isSecureTextEntry = isPasswordHidden
-    }
-    
-    private func setUpTextField(_ textField: UITextField, isSecureTextEntry: Bool) {
-        textField.delegate = self
-        textField.isSecureTextEntry = isSecureTextEntry
-    }
-    
-    @objc private func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
-        let touchPoint = gesture.location(in: self.view.window)
-        
-        switch gesture.state {
-        case .began:
-            initialTouchPoint = touchPoint
-        case .changed:
-            let xOffset = touchPoint.x - initialTouchPoint.x
-            if xOffset > 0 {
-                self.view.frame.origin.x = xOffset
-            }
-        case .ended:
-            let xOffset = touchPoint.x - initialTouchPoint.x
-            if xOffset >= 100 {
-                self.navigationController?.popToRootViewController(animated: true)
-            } else {
-                UIView.animate(withDuration: 0.3) {
-                    self.view.frame.origin.x = 0
-                }
-            }
-        default:
-            break
-        }
-    }
-    
 }
 
+// MARK: - Handle Return Key Tap on Keyboard
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

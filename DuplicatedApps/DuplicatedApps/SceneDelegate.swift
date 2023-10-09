@@ -11,7 +11,7 @@ import FirebaseAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    @Published var userSession: FirebaseAuth.User?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         self.setUpWindow(with: scene)
@@ -29,14 +29,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     public func checkAuthentication() {
-            if Auth.auth().currentUser == nil {
-                self.goToController(with: LoginViewController())
-            } else {
-                self.goToController(with: WelcomeViewController())
-            }
+        
+        self.userSession =  Auth.auth().currentUser
+        if userSession != nil {
+            goToController(with: NewViewController())
+        } else {
+            goToController(with: WelcomeViewController())
         }
         
-        private func goToController(with viewController: UIViewController) {
+        func goToController(with viewController: UIViewController) {
             DispatchQueue.main.async { [weak self] in
                 UIView.animate(withDuration: 0.25) {
                     self?.window?.layer.opacity = 0
@@ -53,7 +54,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 }
             }
         }
-
-
+    }
 }
 

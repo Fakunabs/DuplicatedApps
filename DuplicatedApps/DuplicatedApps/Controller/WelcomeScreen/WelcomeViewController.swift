@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, UIScrollViewDelegate {
+class WelcomeViewController: BaseViewController {
 
     struct Constants {
         static let collectionViewRatio: CGFloat = 622 / 414
@@ -18,18 +18,17 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     private var currentPage : Int = 0
     private var autoScrollTimer: Timer?
 
-    @IBOutlet weak var homeScreenSlideCollectionView: UICollectionView!
-    @IBOutlet weak var slidePageControl: UIPageControl!
+    @IBOutlet private weak var homeScreenSlideCollectionView: UICollectionView!
+    @IBOutlet private weak var slidePageControl: UIPageControl!
     
     
-    @IBAction func didTapGetStartedButton(_ sender: Any) {
+    @IBAction private func didTapGetStartedButton(_ sender: Any) {
         let loginViewController = LoginViewController()
         self.navigationController?.pushViewController(loginViewController, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
         configCollectionView()
         setUpPageControl()
         startAutoScroll()
@@ -41,8 +40,8 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     }
 }
 
-
-extension WelcomeViewController {
+// MARK: - Setup Page Control
+extension WelcomeViewController : UIScrollViewDelegate {
     private func setUpPageControl() {
         slidePageControl.currentPage = 0
         slidePageControl.numberOfPages = 3
@@ -54,6 +53,7 @@ extension WelcomeViewController {
     }
 }
 
+// MARK: - Setup Collection View 
 extension WelcomeViewController {
     private func configCollectionView() {
         homeScreenSlideCollectionView.register(UINib(nibName: WelcomeScreenSlideCollectionViewCell.className, bundle: nil), forCellWithReuseIdentifier: WelcomeScreenSlideCollectionViewCell.className)
@@ -78,7 +78,6 @@ extension WelcomeViewController {
     }
 
     @objc private func autoScrollToNextPage() {
-        // Tự động trượt đến trang tiếp theo
         let nextPage = currentPage + 1
         if nextPage < slidePageControl.numberOfPages {
             let indexPath = IndexPath(item: nextPage, section: 0)
@@ -86,16 +85,15 @@ extension WelcomeViewController {
             currentPage = nextPage
             slidePageControl.currentPage = currentPage
         } else {
-            // Nếu đã ở trang cuối, quay lại trang đầu tiên
             let indexPath = IndexPath(item: 0, section: 0)
             homeScreenSlideCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             currentPage = 0
             slidePageControl.currentPage = currentPage
         }
     }
-
 }
 
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
 extension WelcomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

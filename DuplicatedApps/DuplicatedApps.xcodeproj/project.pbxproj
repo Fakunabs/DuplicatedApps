@@ -29,6 +29,8 @@
 		1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */; };
 		1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */; };
 		1C84296C2AD07EFA00D265F8 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */; };
+		1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95DF3E2AD3B9A700304DEF /* UIColor+Extension.swift */; };
+		1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95DF402AD3B9E800304DEF /* AppColors.swift */; };
 		1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9886CD2ACD8692001750CF /* SignUpViewController.swift */; };
 		1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9886CE2ACD8692001750CF /* SignUpViewController.xib */; };
 		1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */; };
@@ -66,6 +68,8 @@
 		1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		1C95DF3E2AD3B9A700304DEF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1C95DF402AD3B9E800304DEF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		1C9886CD2ACD8692001750CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1C9886CE2ACD8692001750CF /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */,
+				1C95DF3E2AD3B9A700304DEF /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			children = (
 				1C1E9A172ACAA4CF009824D5 /* AppImages.swift */,
 				1C007B382AD2F75900BED4ED /* AlertManager.swift */,
+				1C95DF402AD3B9E800304DEF /* AppColors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C007B372AD2E94A00BED4ED /* Validator.swift in Sources */,
+				1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */,
 				1C007B392AD2F75900BED4ED /* AlertManager.swift in Sources */,
 				1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */,
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
@@ -419,6 +426,7 @@
 				490956BA2AC412880067EF05 /* DuplicatedApps.xcdatamodeld in Sources */,
 				490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */,
 				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
+				1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */,
 				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
 				1C84296C2AD07EFA00D265F8 /* LoginUserRequest.swift in Sources */,
 				1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */,

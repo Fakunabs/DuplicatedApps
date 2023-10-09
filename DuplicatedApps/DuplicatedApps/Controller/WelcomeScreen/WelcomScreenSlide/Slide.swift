@@ -9,7 +9,7 @@ import UIKit
 
 class Slide: UIView {
 
-    @IBOutlet weak var welComeScreenItemImageView: UIImageView!
-    @IBOutlet weak var welComeScreenTextLabel: UILabel!
+    @IBOutlet private weak var welComeScreenItemImageView: UIImageView!
+    @IBOutlet private weak var welComeScreenTextLabel: UILabel!
     
 }
