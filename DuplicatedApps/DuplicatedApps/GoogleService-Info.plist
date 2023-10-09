@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyABkoJoeo4ydZyEs1mXcx2ZoP_K_16nV_g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>730681817817</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dofuulive.iosapp.duplicated</string>
+	<key>PROJECT_ID</key>
+	<string>duplicated-apps</string>
+	<key>STORAGE_BUCKET</key>
+	<string>duplicated-apps.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:730681817817:ios:c572dddd0718af22539cc8</string>
+</dict>
+</plist>

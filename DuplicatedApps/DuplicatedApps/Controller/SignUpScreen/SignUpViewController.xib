@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="DuplicatedApps" customModuleProvider="target">
             <connections>
+                <outlet property="emailSignUpTextField" destination="J6N-8f-Rw1" id="rpW-Lp-aQA"/>
+                <outlet property="passwordSignUpTextField" destination="939-eu-AWj" id="8ga-gu-VpL"/>
                 <outlet property="signUpBackgroundView" destination="WMs-zg-42A" id="IsB-uW-U54"/>
+                <outlet property="usernameSignUpTextField" destination="p41-Uu-Dkm" id="umd-gT-C1n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -66,7 +69,7 @@
                                 <constraint firstAttribute="height" constant="53" id="XBK-rP-1Up"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="yourname@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6N-8f-Rw1">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6N-8f-Rw1">
                             <rect key="frame" x="108" y="147.33333333333331" width="226" height="53"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,11 +119,11 @@
                                 <constraint firstAttribute="height" constant="53" id="JYw-S5-wLx"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="•••••••••" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="939-eu-AWj">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="939-eu-AWj">
                             <rect key="frame" x="108" y="333.33333333333337" width="226" height="53"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-textfield-key" translatesAutoresizingMaskIntoConstraints="NO" id="KKU-et-XrC">
@@ -136,7 +139,10 @@
                             </constraints>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-BiennaleMediumRegular" family="FONTSPRING DEMO - Biennale Medium" pointSize="20"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Sign in" backgroundImage="background-button"/>
+                            <state key="normal" title="Sign up" backgroundImage="background-button"/>
+                            <connections>
+                                <action selector="didTapSignUpAction:" destination="-1" eventType="touchUpInside" id="x9Q-al-ZsO"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="item_right_line" translatesAutoresizingMaskIntoConstraints="NO" id="zbU-RC-Wpf">
                             <rect key="frame" x="247" y="482.33333333333337" width="87" height="4"/>
@@ -150,7 +156,7 @@
                             <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="yourname@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p41-Uu-Dkm">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p41-Uu-Dkm">
                             <rect key="frame" x="108" y="240.33333333333331" width="226" height="53"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -166,13 +172,6 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" backgroundImage="login-apple-button"/>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup-password-strong" translatesAutoresizingMaskIntoConstraints="NO" id="Kej-XX-qVS">
-                            <rect key="frame" x="262" y="353" width="52" height="14"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="52" id="HQe-jo-KDq"/>
-                                <constraint firstAttribute="height" constant="14" id="Msg-1L-LW4"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.13725490200000001" green="0.098039215690000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -207,10 +206,8 @@
                         <constraint firstItem="CVT-G8-kl3" firstAttribute="centerY" secondItem="p41-Uu-Dkm" secondAttribute="centerY" id="KVO-Mq-pPk"/>
                         <constraint firstItem="939-eu-AWj" firstAttribute="trailing" secondItem="9aB-F5-25o" secondAttribute="trailing" id="KkT-Kj-2Cs"/>
                         <constraint firstItem="Wgj-e4-m7X" firstAttribute="top" secondItem="PnO-0p-MJG" secondAttribute="bottom" constant="20" id="KuI-nu-ll6"/>
-                        <constraint firstItem="Kej-XX-qVS" firstAttribute="centerY" secondItem="939-eu-AWj" secondAttribute="centerY" id="L3m-fK-dIK"/>
                         <constraint firstAttribute="trailing" secondItem="PnO-0p-MJG" secondAttribute="trailing" constant="56" id="LIb-L9-C9G"/>
                         <constraint firstItem="aR0-dm-Ctc" firstAttribute="trailing" secondItem="CVT-G8-kl3" secondAttribute="trailing" id="MXJ-Rv-mUt"/>
-                        <constraint firstItem="Kej-XX-qVS" firstAttribute="leading" secondItem="939-eu-AWj" secondAttribute="trailing" constant="-72" id="MxY-QV-5IT"/>
                         <constraint firstAttribute="trailing" secondItem="aCE-gN-Vtx" secondAttribute="trailing" constant="56" id="NUO-RO-2hh"/>
                         <constraint firstItem="l4U-z7-yvA" firstAttribute="top" secondItem="p41-Uu-Dkm" secondAttribute="top" id="OYn-RL-YCb"/>
                         <constraint firstItem="l4U-z7-yvA" firstAttribute="leading" secondItem="T1f-bU-KQc" secondAttribute="leading" id="Pgg-9e-QMQ"/>
@@ -278,7 +275,6 @@
         <image name="login-apple-button" width="233" height="176"/>
         <image name="login-textfield-key" width="74" height="74"/>
         <image name="login-textfield-person" width="70" height="67"/>
-        <image name="signup-password-strong" width="316" height="64"/>
         <image name="signup-textfield-mail" width="76" height="60"/>
     </resources>
 </document>

@@ -14,10 +14,10 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         static let itemSpacing: CGFloat = 5
     }
     
-    var homeScreenItemSlide : [Slide] = []
-    var currentPage : Int = 0
-    
-    
+    private var homeScreenItemSlide : [Slide] = []
+    private var currentPage : Int = 0
+    private var autoScrollTimer: Timer?
+
     @IBOutlet weak var homeScreenSlideCollectionView: UICollectionView!
     @IBOutlet weak var slidePageControl: UIPageControl!
     
@@ -31,13 +31,19 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
         configCollectionView()
-        setUpPageControll()
+        setUpPageControl()
+        startAutoScroll()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        stopAutoScroll()
     }
 }
 
 
 extension WelcomeViewController {
-    private func setUpPageControll() {
+    private func setUpPageControl() {
         slidePageControl.currentPage = 0
         slidePageControl.numberOfPages = 3
     }
@@ -61,6 +67,33 @@ extension WelcomeViewController {
         let index = Int(round(proportionalOffset))
         return index
     }
+    
+    private func startAutoScroll() {
+        autoScrollTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(autoScrollToNextPage), userInfo: nil, repeats: true)
+    }
+
+    private func stopAutoScroll() {
+        autoScrollTimer?.invalidate()
+        autoScrollTimer = nil
+    }
+
+    @objc private func autoScrollToNextPage() {
+        // Tự động trượt đến trang tiếp theo
+        let nextPage = currentPage + 1
+        if nextPage < slidePageControl.numberOfPages {
+            let indexPath = IndexPath(item: nextPage, section: 0)
+            homeScreenSlideCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            currentPage = nextPage
+            slidePageControl.currentPage = currentPage
+        } else {
+            // Nếu đã ở trang cuối, quay lại trang đầu tiên
+            let indexPath = IndexPath(item: 0, section: 0)
+            homeScreenSlideCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            currentPage = 0
+            slidePageControl.currentPage = currentPage
+        }
+    }
+
 }
 
 extension WelcomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
