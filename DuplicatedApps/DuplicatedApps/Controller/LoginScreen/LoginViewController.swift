@@ -52,8 +52,8 @@ class LoginViewController: BaseViewController {
                 AlertManager.showSignInErrorAlert(on: self, with: error)
                 return
             }
-            let newViewController = NewViewController()
-            self.navigationController?.pushViewController(newViewController, animated: true)
+            let homeViewController = HomeViewController()
+            self.navigationController?.pushViewController(homeViewController, animated: true)
         }
     }
     

@@ -3,4 +3,131 @@
    uuid = "3AA62015-F6B9-4F1E-8B58-30DDD5F9A89E"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7059E4C3-553D-4114-9BEA-0D7A3E387D2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DuplicatedApps/Controller/HomeScreen/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7059E4C3-553D-4114-9BEA-0D7A3E387D2A - 4159be022243dc19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.HomeViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DuplicatedApps.HomeViewController"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "7059E4C3-553D-4114-9BEA-0D7A3E387D2A - a074a49d3299992a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DuplicatedApps.HomeViewController"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7059E4C3-553D-4114-9BEA-0D7A3E387D2A - a1138a16190519df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.HomeViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DuplicatedApps.HomeViewController&gt;"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "7059E4C3-553D-4114-9BEA-0D7A3E387D2A - a2934057feb18098"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.HomeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DuplicatedApps.HomeViewController&gt;"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7059E4C3-553D-4114-9BEA-0D7A3E387D2A - f407e4a0955fa337"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.HomeViewController.__deallocating_deinit"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34AC62F0-E148-40E4-B5CC-E79F166351A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DuplicatedApps/Supporting/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "checkAuthentication()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7E8C95C-6726-47E3-944E-4E2D39F391C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DuplicatedApps/Supporting/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "checkAuthentication()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -9,4 +9,5 @@ import UIKit
 
 struct AppColors {
     static let heliotrope = UIColor(hex: "#E140FB")
+    static let eastBay = UIColor(hex: "#3E4F88")
 }

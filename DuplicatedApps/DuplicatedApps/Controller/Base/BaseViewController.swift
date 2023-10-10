@@ -16,9 +16,12 @@ class BaseViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpNavigationBar()
+        setup()
     }
     
+    func setup() {
+        setUpNavigationBar()
+    }
 }
 
 // MARK : - Navigation Bar

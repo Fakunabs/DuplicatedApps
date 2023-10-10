@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		1C007B372AD2E94A00BED4ED /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C007B362AD2E94A00BED4ED /* Validator.swift */; };
 		1C007B392AD2F75900BED4ED /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C007B382AD2F75900BED4ED /* AlertManager.swift */; };
-		1C007B3D2AD3020600BED4ED /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C007B3B2AD3020600BED4ED /* NewViewController.swift */; };
-		1C007B3E2AD3020600BED4ED /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C007B3C2AD3020600BED4ED /* NewViewController.xib */; };
 		1C02085E2AD013BF0094F29E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C02085D2AD013BF0094F29E /* GoogleService-Info.plist */; };
 		1C09E5A22AD043C300C81723 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09E5A12AD043C300C81723 /* AuthService.swift */; };
 		1C09E5A52AD0486A00C81723 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09E5A42AD0486A00C81723 /* RegisterUserRequest.swift */; };
+		1C0F1EF12AD45BD300342C90 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F1EEF2AD45BD200342C90 /* SettingViewController.swift */; };
+		1C0F1EF22AD45BD300342C90 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F1EF02AD45BD200342C90 /* SettingViewController.xib */; };
 		1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C113F5E2ACAC5B10010E79F /* Slide.swift */; };
 		1C113F612ACAC5E40010E79F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C113F602ACAC5E40010E79F /* Slide.xib */; };
 		1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */; };
@@ -33,6 +33,12 @@
 		1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95DF402AD3B9E800304DEF /* AppColors.swift */; };
 		1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9886CD2ACD8692001750CF /* SignUpViewController.swift */; };
 		1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9886CE2ACD8692001750CF /* SignUpViewController.xib */; };
+		1CA73BDD2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */; };
+		1CA73BE02AD3F6B4000EF304 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA73BDE2AD3F6B4000EF304 /* HomeViewController.swift */; };
+		1CA73BE12AD3F6B4000EF304 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA73BDF2AD3F6B4000EF304 /* HomeViewController.xib */; };
+		1CA73BE62AD3F7B7000EF304 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA73BE52AD3F7B7000EF304 /* TabController.swift */; };
+		1CA73BEA2AD3FDE2000EF304 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA73BE82AD3FDE2000EF304 /* FavouriteViewController.swift */; };
+		1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA73BE92AD3FDE2000EF304 /* FavouriteViewController.xib */; };
 		1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
 		490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B12AC412880067EF05 /* SceneDelegate.swift */; };
@@ -48,11 +54,11 @@
 		032C4A4164A655EEA1528E03 /* Pods-DuplicatedApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuplicatedApps.debug.xcconfig"; path = "Target Support Files/Pods-DuplicatedApps/Pods-DuplicatedApps.debug.xcconfig"; sourceTree = "<group>"; };
 		1C007B362AD2E94A00BED4ED /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		1C007B382AD2F75900BED4ED /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
-		1C007B3B2AD3020600BED4ED /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
-		1C007B3C2AD3020600BED4ED /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		1C02085D2AD013BF0094F29E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1C09E5A12AD043C300C81723 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1C09E5A42AD0486A00C81723 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
+		1C0F1EEF2AD45BD200342C90 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1C0F1EF02AD45BD200342C90 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		1C113F5E2ACAC5B10010E79F /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		1C113F602ACAC5E40010E79F /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,12 @@
 		1C95DF402AD3B9E800304DEF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		1C9886CD2ACD8692001750CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1C9886CE2ACD8692001750CF /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MADE Tommy Soft Medium PERSONAL USE.otf"; sourceTree = "<group>"; };
+		1CA73BDE2AD3F6B4000EF304 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1CA73BDF2AD3F6B4000EF304 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1CA73BE52AD3F7B7000EF304 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		1CA73BE82AD3FDE2000EF304 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		1CA73BE92AD3FDE2000EF304 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490956AF2AC412880067EF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,15 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C007B3A2AD301ED00BED4ED /* NewViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1C007B3B2AD3020600BED4ED /* NewViewController.swift */,
-				1C007B3C2AD3020600BED4ED /* NewViewController.xib */,
-			);
-			path = NewViewController;
-			sourceTree = "<group>";
-		};
 		1C09E5A02AD0439D00C81723 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +206,9 @@
 		1C7D63BC2ACAB21700E26C51 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1C007B3A2AD301ED00BED4ED /* NewViewController */,
+				1CA73BEC2AD3FEC4000EF304 /* SettingScreen */,
+				1CA73BE72AD3FCB5000EF304 /* FavouriteScreen */,
+				1CA73BDB2AD3F528000EF304 /* HomeScreen */,
 				1CC6BCD42ACFED8F007AB99D /* Base */,
 				1C1E9A0E2ACAA242009824D5 /* SignUpScreen */,
 				1C1E9A0D2ACAA1DB009824D5 /* LoginScreen */,
@@ -217,10 +222,48 @@
 			children = (
 				1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */,
 				1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */,
+				1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */,
 				1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */,
 				1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */,
 			);
 			path = font;
+			sourceTree = "<group>";
+		};
+		1CA73BDB2AD3F528000EF304 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1CA73BDE2AD3F6B4000EF304 /* HomeViewController.swift */,
+				1CA73BDF2AD3F6B4000EF304 /* HomeViewController.xib */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		1CA73BE22AD3F708000EF304 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				490956AF2AC412880067EF05 /* AppDelegate.swift */,
+				490956B12AC412880067EF05 /* SceneDelegate.swift */,
+				1CA73BE52AD3F7B7000EF304 /* TabController.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1CA73BE72AD3FCB5000EF304 /* FavouriteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1CA73BE82AD3FDE2000EF304 /* FavouriteViewController.swift */,
+				1CA73BE92AD3FDE2000EF304 /* FavouriteViewController.xib */,
+			);
+			path = FavouriteScreen;
+			sourceTree = "<group>";
+		};
+		1CA73BEC2AD3FEC4000EF304 /* SettingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1C0F1EEF2AD45BD200342C90 /* SettingViewController.swift */,
+				1C0F1EF02AD45BD200342C90 /* SettingViewController.xib */,
+			);
+			path = SettingScreen;
 			sourceTree = "<group>";
 		};
 		1CC6BCD42ACFED8F007AB99D /* Base */ = {
@@ -252,14 +295,13 @@
 		490956AE2AC412880067EF05 /* DuplicatedApps */ = {
 			isa = PBXGroup;
 			children = (
+				1CA73BE22AD3F708000EF304 /* Supporting */,
 				1C09E5A32AD0483800C81723 /* Models */,
 				1C09E5A02AD0439D00C81723 /* Auth */,
 				1C7D63BC2ACAB21700E26C51 /* Controller */,
 				1C7D63BB2ACAB1E800E26C51 /* Resources */,
 				1C1E9A162ACAA4B5009824D5 /* Constants */,
 				1C1E9A132ACAA2F8009824D5 /* Extensions */,
-				490956AF2AC412880067EF05 /* AppDelegate.swift */,
-				490956B12AC412880067EF05 /* SceneDelegate.swift */,
 				490956B32AC412880067EF05 /* ViewController.swift */,
 				490956B52AC412880067EF05 /* Main.storyboard */,
 				490956BD2AC412880067EF05 /* LaunchScreen.storyboard */,
@@ -347,8 +389,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */,
 				1C02085E2AD013BF0094F29E /* GoogleService-Info.plist in Resources */,
 				1C5F60D22ACBCA87001D1391 /* LoginViewController.xib in Resources */,
+				1C0F1EF22AD45BD300342C90 /* SettingViewController.xib in Resources */,
 				1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */,
 				490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */,
 				1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */,
@@ -358,9 +402,10 @@
 				1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */,
 				1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */,
 				490956B72AC412880067EF05 /* Main.storyboard in Resources */,
-				1C007B3E2AD3020600BED4ED /* NewViewController.xib in Resources */,
+				1CA73BDD2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf in Resources */,
 				1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */,
 				1C5F60D42ACBF0DB001D1391 /* TTHoves-DemiBold.ttf in Resources */,
+				1CA73BE12AD3F6B4000EF304 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +460,13 @@
 			files = (
 				1C007B372AD2E94A00BED4ED /* Validator.swift in Sources */,
 				1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */,
+				1CA73BEA2AD3FDE2000EF304 /* FavouriteViewController.swift in Sources */,
 				1C007B392AD2F75900BED4ED /* AlertManager.swift in Sources */,
 				1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */,
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
+				1CA73BE02AD3F6B4000EF304 /* HomeViewController.swift in Sources */,
 				1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */,
+				1CA73BE62AD3F7B7000EF304 /* TabController.swift in Sources */,
 				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
 				490956B02AC412880067EF05 /* AppDelegate.swift in Sources */,
 				1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */,
@@ -428,9 +476,9 @@
 				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
 				1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */,
 				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
+				1C0F1EF12AD45BD300342C90 /* SettingViewController.swift in Sources */,
 				1C84296C2AD07EFA00D265F8 /* LoginUserRequest.swift in Sources */,
 				1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */,
-				1C007B3D2AD3020600BED4ED /* NewViewController.swift in Sources */,
 				1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */,
 				1C09E5A52AD0486A00C81723 /* RegisterUserRequest.swift in Sources */,
 			);

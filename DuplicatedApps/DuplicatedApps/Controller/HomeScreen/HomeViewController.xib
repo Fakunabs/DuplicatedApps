@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DuplicatedApps" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Gustano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-Wp-kl4">
+                    <rect key="frame" x="27" y="62" width="112" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen-icon" translatesAutoresizingMaskIntoConstraints="NO" id="gjA-wj-ATC">
+                    <rect key="frame" x="334" y="50" width="49" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2kZ-fJ-eH6"/>
+                        <constraint firstAttribute="width" constant="49" id="x18-qT-tws"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="07l-JK-pPa">
+                    <rect key="frame" x="0.0" y="91" width="414" height="805"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.098039215690000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="avQ-Wp-kl4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="9J4-8I-vuu"/>
+                <constraint firstItem="07l-JK-pPa" firstAttribute="top" secondItem="avQ-Wp-kl4" secondAttribute="bottom" constant="8" symbolic="YES" id="GjL-4m-Blg"/>
+                <constraint firstAttribute="bottom" secondItem="07l-JK-pPa" secondAttribute="bottom" id="Hfl-PF-wka"/>
+                <constraint firstItem="gjA-wj-ATC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="Z1Y-Cm-ZN2"/>
+                <constraint firstItem="avQ-Wp-kl4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="Z5S-Td-vRR"/>
+                <constraint firstItem="07l-JK-pPa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zi8-Oo-GG9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gjA-wj-ATC" secondAttribute="trailing" constant="31" id="h0l-c4-Atr"/>
+                <constraint firstItem="07l-JK-pPa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="if7-fm-kqm"/>
+            </constraints>
+            <point key="canvasLocation" x="65.217391304347828" y="-11.383928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homescreen-icon" width="384" height="384"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

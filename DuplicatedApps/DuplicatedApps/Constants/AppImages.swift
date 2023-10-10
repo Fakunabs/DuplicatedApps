@@ -23,6 +23,9 @@ struct AppImages {
     static let loginTextFieldPerson = UIImage(named: "login-textfield-person")
     static let loginTextFieldUnmaskPass = UIImage(named: "login-textfield-unmask-pw")
     static let signUpTextFieldMailIcon = UIImage(named: "signup-textfield-mail")
+    static let tabbarItemHome = UIImage(named: "tabbar-item-home")
+    static let tabbarItemFavourite = UIImage(named: "tabbar-item-favourite")
+    static let tabbarItemSetting = UIImage(named: "tabbar-item-setting")
 }
 
 
