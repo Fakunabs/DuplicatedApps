@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DuplicatedApps" customModuleProvider="target">
             <connections>
+                <outlet property="homeTableView" destination="07l-JK-pPa" id="gHJ-5F-N9f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,21 +20,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Gustano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-Wp-kl4">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Gustano" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-Wp-kl4">
                     <rect key="frame" x="27" y="62" width="112" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen-icon" translatesAutoresizingMaskIntoConstraints="NO" id="gjA-wj-ATC">
-                    <rect key="frame" x="334" y="50" width="49" height="44"/>
+                    <rect key="frame" x="345" y="50" width="49" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="2kZ-fJ-eH6"/>
                         <constraint firstAttribute="width" constant="49" id="x18-qT-tws"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="07l-JK-pPa">
-                    <rect key="frame" x="0.0" y="91" width="414" height="805"/>
+                    <rect key="frame" x="0.0" y="103" width="414" height="793"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -41,13 +42,13 @@
             <color key="backgroundColor" red="0.13725490200000001" green="0.098039215690000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="avQ-Wp-kl4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="9J4-8I-vuu"/>
-                <constraint firstItem="07l-JK-pPa" firstAttribute="top" secondItem="avQ-Wp-kl4" secondAttribute="bottom" constant="8" symbolic="YES" id="GjL-4m-Blg"/>
-                <constraint firstAttribute="bottom" secondItem="07l-JK-pPa" secondAttribute="bottom" id="Hfl-PF-wka"/>
+                <constraint firstAttribute="bottom" secondItem="07l-JK-pPa" secondAttribute="bottom" id="DSh-hN-SPe"/>
                 <constraint firstItem="gjA-wj-ATC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="Z1Y-Cm-ZN2"/>
                 <constraint firstItem="avQ-Wp-kl4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="Z5S-Td-vRR"/>
-                <constraint firstItem="07l-JK-pPa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zi8-Oo-GG9"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gjA-wj-ATC" secondAttribute="trailing" constant="31" id="h0l-c4-Atr"/>
-                <constraint firstItem="07l-JK-pPa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="if7-fm-kqm"/>
+                <constraint firstItem="07l-JK-pPa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cPZ-mp-G1M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gjA-wj-ATC" secondAttribute="trailing" constant="20" id="h0l-c4-Atr"/>
+                <constraint firstItem="07l-JK-pPa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nJ1-ob-JB4"/>
+                <constraint firstItem="07l-JK-pPa" firstAttribute="top" secondItem="avQ-Wp-kl4" secondAttribute="bottom" constant="20" id="qSW-LT-NcC"/>
             </constraints>
             <point key="canvasLocation" x="65.217391304347828" y="-11.383928571428571"/>
         </view>

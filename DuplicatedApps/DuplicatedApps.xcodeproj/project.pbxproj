@@ -29,6 +29,10 @@
 		1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */; };
 		1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */; };
 		1C84296C2AD07EFA00D265F8 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */; };
+		1C8449722AD5374000C1AEE2 /* Inter-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C8449702AD5373F00C1AEE2 /* Inter-BoldItalic.otf */; };
+		1C8449732AD5374000C1AEE2 /* Inter-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C8449712AD5374000C1AEE2 /* Inter-LightItalic.otf */; };
+		1C84497F2AD53E6A00C1AEE2 /* MostPopularHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84497D2AD53E6A00C1AEE2 /* MostPopularHeaderView.swift */; };
+		1C8449802AD53E6A00C1AEE2 /* MostPopularHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C84497E2AD53E6A00C1AEE2 /* MostPopularHeaderView.xib */; };
 		1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95DF3E2AD3B9A700304DEF /* UIColor+Extension.swift */; };
 		1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95DF402AD3B9E800304DEF /* AppColors.swift */; };
 		1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9886CD2ACD8692001750CF /* SignUpViewController.swift */; };
@@ -39,6 +43,10 @@
 		1CA73BE62AD3F7B7000EF304 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA73BE52AD3F7B7000EF304 /* TabController.swift */; };
 		1CA73BEA2AD3FDE2000EF304 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA73BE82AD3FDE2000EF304 /* FavouriteViewController.swift */; };
 		1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA73BE92AD3FDE2000EF304 /* FavouriteViewController.xib */; };
+		1CBB70492AD543FD00D2DEC8 /* AllAppsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBB70472AD543FD00D2DEC8 /* AllAppsHeaderView.swift */; };
+		1CBB704A2AD543FD00D2DEC8 /* AllAppsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CBB70482AD543FD00D2DEC8 /* AllAppsHeaderView.xib */; };
+		1CBB704F2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */; };
+		1CBB70502AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */; };
 		1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
 		490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B12AC412880067EF05 /* SceneDelegate.swift */; };
@@ -74,6 +82,10 @@
 		1C7D63C02ACAB2A400E26C51 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		1C8449702AD5373F00C1AEE2 /* Inter-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BoldItalic.otf"; sourceTree = "<group>"; };
+		1C8449712AD5374000C1AEE2 /* Inter-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-LightItalic.otf"; sourceTree = "<group>"; };
+		1C84497D2AD53E6A00C1AEE2 /* MostPopularHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularHeaderView.swift; sourceTree = "<group>"; };
+		1C84497E2AD53E6A00C1AEE2 /* MostPopularHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularHeaderView.xib; sourceTree = "<group>"; };
 		1C95DF3E2AD3B9A700304DEF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1C95DF402AD3B9E800304DEF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		1C9886CD2ACD8692001750CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +96,10 @@
 		1CA73BE52AD3F7B7000EF304 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		1CA73BE82AD3FDE2000EF304 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		1CA73BE92AD3FDE2000EF304 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		1CBB70472AD543FD00D2DEC8 /* AllAppsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppsHeaderView.swift; sourceTree = "<group>"; };
+		1CBB70482AD543FD00D2DEC8 /* AllAppsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAppsHeaderView.xib; sourceTree = "<group>"; };
+		1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularAppsTableViewCell.swift; sourceTree = "<group>"; };
+		1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularAppsTableViewCell.xib; sourceTree = "<group>"; };
 		1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490956AF2AC412880067EF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -224,14 +240,30 @@
 				1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */,
 				1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */,
 				1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */,
+				1C8449702AD5373F00C1AEE2 /* Inter-BoldItalic.otf */,
+				1C8449712AD5374000C1AEE2 /* Inter-LightItalic.otf */,
 				1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */,
 			);
 			path = font;
 			sourceTree = "<group>";
 		};
+		1C8449742AD53B5400C1AEE2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1C84497D2AD53E6A00C1AEE2 /* MostPopularHeaderView.swift */,
+				1C84497E2AD53E6A00C1AEE2 /* MostPopularHeaderView.xib */,
+				1CBB70472AD543FD00D2DEC8 /* AllAppsHeaderView.swift */,
+				1CBB70482AD543FD00D2DEC8 /* AllAppsHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		1CA73BDB2AD3F528000EF304 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1CBB704C2AD5538800D2DEC8 /* AllApps */,
+				1CBB704B2AD54F2B00D2DEC8 /* MostPopularApps */,
+				1C8449742AD53B5400C1AEE2 /* Header */,
 				1CA73BDE2AD3F6B4000EF304 /* HomeViewController.swift */,
 				1CA73BDF2AD3F6B4000EF304 /* HomeViewController.xib */,
 			);
@@ -264,6 +296,30 @@
 				1C0F1EF02AD45BD200342C90 /* SettingViewController.xib */,
 			);
 			path = SettingScreen;
+			sourceTree = "<group>";
+		};
+		1CBB704B2AD54F2B00D2DEC8 /* MostPopularApps */ = {
+			isa = PBXGroup;
+			children = (
+				1CBB70512AD5550B00D2DEC8 /* cell */,
+				1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */,
+				1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */,
+			);
+			path = MostPopularApps;
+			sourceTree = "<group>";
+		};
+		1CBB704C2AD5538800D2DEC8 /* AllApps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AllApps;
+			sourceTree = "<group>";
+		};
+		1CBB70512AD5550B00D2DEC8 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		1CC6BCD42ACFED8F007AB99D /* Base */ = {
@@ -391,11 +447,16 @@
 			files = (
 				1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */,
 				1C02085E2AD013BF0094F29E /* GoogleService-Info.plist in Resources */,
+				1CBB70502AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib in Resources */,
 				1C5F60D22ACBCA87001D1391 /* LoginViewController.xib in Resources */,
+				1C8449732AD5374000C1AEE2 /* Inter-LightItalic.otf in Resources */,
+				1CBB704A2AD543FD00D2DEC8 /* AllAppsHeaderView.xib in Resources */,
 				1C0F1EF22AD45BD300342C90 /* SettingViewController.xib in Resources */,
 				1C74AF582ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf in Resources */,
 				490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */,
 				1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */,
+				1C8449802AD53E6A00C1AEE2 /* MostPopularHeaderView.xib in Resources */,
+				1C8449722AD5374000C1AEE2 /* Inter-BoldItalic.otf in Resources */,
 				1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */,
 				1C113F612ACAC5E40010E79F /* Slide.xib in Resources */,
 				490956BC2AC412880067EF05 /* Assets.xcassets in Resources */,
@@ -462,18 +523,21 @@
 				1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */,
 				1CA73BEA2AD3FDE2000EF304 /* FavouriteViewController.swift in Sources */,
 				1C007B392AD2F75900BED4ED /* AlertManager.swift in Sources */,
+				1CBB704F2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift in Sources */,
 				1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */,
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
 				1CA73BE02AD3F6B4000EF304 /* HomeViewController.swift in Sources */,
 				1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */,
 				1CA73BE62AD3F7B7000EF304 /* TabController.swift in Sources */,
 				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
+				1CBB70492AD543FD00D2DEC8 /* AllAppsHeaderView.swift in Sources */,
 				490956B02AC412880067EF05 /* AppDelegate.swift in Sources */,
 				1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */,
 				1C09E5A22AD043C300C81723 /* AuthService.swift in Sources */,
 				490956BA2AC412880067EF05 /* DuplicatedApps.xcdatamodeld in Sources */,
 				490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */,
 				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
+				1C84497F2AD53E6A00C1AEE2 /* MostPopularHeaderView.swift in Sources */,
 				1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */,
 				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
 				1C0F1EF12AD45BD300342C90 /* SettingViewController.swift in Sources */,

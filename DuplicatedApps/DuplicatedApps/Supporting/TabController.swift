@@ -24,18 +24,14 @@ class TabController: UITabBarController {
         self.tabBar.tintColor = AppColors.eastBay
         UITabBar.appearance().backgroundColor = .white
         let newTabBarHeight: CGFloat = 80.0
-        
         for item in self.tabBar.items ?? [] {
             item.imageInsets = UIEdgeInsets(top: (newTabBarHeight - tabBar.frame.height) / 2, left: 0, bottom: -((newTabBarHeight - tabBar.frame.height) / 2), right: 0)
         }
-        var tabBarFrame = self.tabBar.frame
     }
     
     private func createNav(with image: UIImage?, viewController: UIViewController) -> UINavigationController {
         let navigation = UINavigationController(rootViewController: viewController)
         navigation.tabBarItem.image = image
-        navigation.navigationController?.isNavigationBarHidden = true
-        
         return navigation
     }
 }
