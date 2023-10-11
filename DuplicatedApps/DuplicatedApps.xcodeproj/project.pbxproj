@@ -20,6 +20,7 @@
 		1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */; };
 		1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */; };
 		1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A172ACAA4CF009824D5 /* AppImages.swift */; };
+		1C5452EC2AD68F0600D6590C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5452EB2AD68F0600D6590C /* Users.swift */; };
 		1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */; };
 		1C5F60D22ACBCA87001D1391 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */; };
 		1C5F60D42ACBF0DB001D1391 /* TTHoves-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */; };
@@ -73,6 +74,7 @@
 		1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		1C1E9A172ACAA4CF009824D5 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		1C5452EB2AD68F0600D6590C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1C5F60D32ACBF0DB001D1391 /* TTHoves-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTHoves-DemiBold.ttf"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				1C09E5A42AD0486A00C81723 /* RegisterUserRequest.swift */,
 				1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */,
+				1C5452EB2AD68F0600D6590C /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */,
 				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
 				1C84497F2AD53E6A00C1AEE2 /* MostPopularHeaderView.swift in Sources */,
+				1C5452EC2AD68F0600D6590C /* Users.swift in Sources */,
 				1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */,
 				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
 				1C0F1EF12AD45BD300342C90 /* SettingViewController.swift in Sources */,
