@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "home-screen-google-icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
