@@ -24,7 +24,6 @@ class MostPopularAppsHeaderView: UIView {
     }
     
     private func loadNib() {
-        
         Bundle.main.loadNibNamed(MostPopularAppsHeaderView.className, owner: self)
         addSubview(contentView)
         contentView.frame = self.bounds
@@ -32,5 +31,4 @@ class MostPopularAppsHeaderView: UIView {
         titleView.layer.cornerRadius = 9
         hideAppsTitleView.layer.cornerRadius = 9
     }
-
 }

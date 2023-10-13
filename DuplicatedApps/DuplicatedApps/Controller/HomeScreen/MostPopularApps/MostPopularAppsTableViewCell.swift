@@ -17,21 +17,16 @@ class MostPopularAppsTableViewCell: UITableViewCell {
         static var collectionViewEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 27)
     }
     
-    
-
-
-    @IBOutlet var collectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private var collectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         configCollectionView()
     }
-    
-    
 }
 
-
+// MARK: - Config Collection View
 extension MostPopularAppsTableViewCell {
     private func configCollectionView() {
         let layout = UICollectionViewFlowLayout()
@@ -48,6 +43,7 @@ extension MostPopularAppsTableViewCell {
     }
 }
 
+// MARK: - Collection View Data Source and Delegate
 extension MostPopularAppsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -65,5 +61,4 @@ extension MostPopularAppsTableViewCell: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return Constants.collectionViewEdgeInsets
     }
-
 }

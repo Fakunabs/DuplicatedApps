@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Heading of Home Table View
 enum HomeSectionType: CaseIterable {
     case mostpopularapps
     case allapps
@@ -31,6 +32,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // Hide navigation bar
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.navigationController?.navigationBar.isHidden = true
     }
@@ -38,17 +40,21 @@ class HomeViewController: UIViewController {
     private func configTableView() {
         homeTableView.separatorStyle = .none
         homeTableView.backgroundColor = .clear
+        // MARK: - Register Home Table View
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        // MARK: - Register Heading View
         homeTableView.register(UINib(nibName: MostPopularAppsHeaderView.className, bundle: nil),
                                forHeaderFooterViewReuseIdentifier: MostPopularAppsHeaderView.className)
         homeTableView.register(UINib(nibName: AllAppsHeaderView.className, bundle: nil),
                                forHeaderFooterViewReuseIdentifier: AllAppsHeaderView.className)
+        // MARK: - Register Table View Cell
         homeTableView.register(UINib(nibName: MostPopularAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: MostPopularAppsTableViewCell.className)
+        homeTableView.register(UINib(nibName: AllAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: AllAppsTableViewCell.className)
     }
 }
 
-
+// MARK: - Table View Data Source
 extension HomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,7 +66,7 @@ extension HomeViewController: UITableViewDataSource {
         case .mostpopularapps:
             return 1
         case .allapps:
-            return 0
+            return 1
         }
     }
     
@@ -75,11 +81,15 @@ extension HomeViewController: UITableViewDataSource {
             
             return mostPopularAppsCell
         case .allapps:
-            return UITableViewCell()
+            guard let allAppsCell = homeTableView.dequeueReusableCell(withIdentifier: AllAppsTableViewCell.className, for: indexPath) as? AllAppsTableViewCell
+            else {
+                return UITableViewCell()
+            }
+            return allAppsCell
         }
     }
 }
-
+// MARK: - Table View Delegate
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -107,6 +117,7 @@ extension HomeViewController: UITableViewDelegate {
     }
 }
 
+// MARK: - ConfigWelcomeText
 extension HomeViewController {
     private func configWelcomeText() {
         let welcomeText = Constants.helloUserText

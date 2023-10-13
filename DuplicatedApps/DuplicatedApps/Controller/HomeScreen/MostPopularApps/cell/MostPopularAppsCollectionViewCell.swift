@@ -18,5 +18,4 @@ class MostPopularAppsCollectionViewCell: UICollectionViewCell {
         containerView.layer.cornerRadius = 10
         iconView.layer.cornerRadius = 10
     }
-
 }

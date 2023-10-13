@@ -26,6 +26,12 @@ struct AppImages {
     static let tabbarItemHome = UIImage(named: "tabbar-item-home")
     static let tabbarItemFavourite = UIImage(named: "tabbar-item-favourite")
     static let tabbarItemSetting = UIImage(named: "tabbar-item-setting")
+    static let facebookLiteIcon = UIImage(named: "facebook-lite-icon")
+    static let googleIcon = UIImage(named: "google-icon")
+    static let graphicDesignerIcon = UIImage(named: "graphic-designer-icon")
+    static let uxIcon = UIImage(named: "ux-icon")
+    static let appleIcon = UIImage(named: "apple-icon")
+    static let twitterIcon = UIImage(named: "twitter-icon")
 }
 
 

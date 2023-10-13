@@ -16,6 +16,10 @@
 		1C0F1EF22AD45BD300342C90 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F1EF02AD45BD200342C90 /* SettingViewController.xib */; };
 		1C1043E82AD849E000938A25 /* MostPopularAppsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1043E62AD849E000938A25 /* MostPopularAppsHeaderView.swift */; };
 		1C1043E92AD849E000938A25 /* MostPopularAppsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1043E72AD849E000938A25 /* MostPopularAppsHeaderView.xib */; };
+		1C1043EC2AD8620C00938A25 /* AllAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1043EA2AD8620C00938A25 /* AllAppsTableViewCell.swift */; };
+		1C1043ED2AD8620C00938A25 /* AllAppsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1043EB2AD8620C00938A25 /* AllAppsTableViewCell.xib */; };
+		1C1043F12AD9274400938A25 /* AllAppsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1043EF2AD9274400938A25 /* AllAppsCollectionViewCell.swift */; };
+		1C1043F22AD9274400938A25 /* AllAppsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1043F02AD9274400938A25 /* AllAppsCollectionViewCell.xib */; };
 		1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C113F5E2ACAC5B10010E79F /* Slide.swift */; };
 		1C113F612ACAC5E40010E79F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C113F602ACAC5E40010E79F /* Slide.xib */; };
 		1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */; };
@@ -41,6 +45,9 @@
 		1C9724A42AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9724A22AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.xib */; };
 		1C9886CF2ACD8692001750CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9886CD2ACD8692001750CF /* SignUpViewController.swift */; };
 		1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9886CE2ACD8692001750CF /* SignUpViewController.xib */; };
+		1C99AF192AD955B800BCA2FE /* Inter-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C99AF182AD955B800BCA2FE /* Inter-Italic.otf */; };
+		1C99AF1B2AD955FF00BCA2FE /* Inter-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C99AF1A2AD955FF00BCA2FE /* Inter-MediumItalic.otf */; };
+		1C99AF1D2AD958CE00BCA2FE /* AllApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C99AF1C2AD958CE00BCA2FE /* AllApps.swift */; };
 		1CA73BDD2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */; };
 		1CA73BE02AD3F6B4000EF304 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA73BDE2AD3F6B4000EF304 /* HomeViewController.swift */; };
 		1CA73BE12AD3F6B4000EF304 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA73BDF2AD3F6B4000EF304 /* HomeViewController.xib */; };
@@ -73,6 +80,10 @@
 		1C0F1EF02AD45BD200342C90 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		1C1043E62AD849E000938A25 /* MostPopularAppsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularAppsHeaderView.swift; sourceTree = "<group>"; };
 		1C1043E72AD849E000938A25 /* MostPopularAppsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularAppsHeaderView.xib; sourceTree = "<group>"; };
+		1C1043EA2AD8620C00938A25 /* AllAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppsTableViewCell.swift; sourceTree = "<group>"; };
+		1C1043EB2AD8620C00938A25 /* AllAppsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAppsTableViewCell.xib; sourceTree = "<group>"; };
+		1C1043EF2AD9274400938A25 /* AllAppsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C1043F02AD9274400938A25 /* AllAppsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAppsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1C113F5E2ACAC5B10010E79F /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		1C113F602ACAC5E40010E79F /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +109,9 @@
 		1C9724A22AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularAppsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1C9886CD2ACD8692001750CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1C9886CE2ACD8692001750CF /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		1C99AF182AD955B800BCA2FE /* Inter-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Italic.otf"; sourceTree = "<group>"; };
+		1C99AF1A2AD955FF00BCA2FE /* Inter-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-MediumItalic.otf"; sourceTree = "<group>"; };
+		1C99AF1C2AD958CE00BCA2FE /* AllApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllApps.swift; sourceTree = "<group>"; };
 		1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MADE Tommy Soft Medium PERSONAL USE.otf"; sourceTree = "<group>"; };
 		1CA73BDE2AD3F6B4000EF304 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1CA73BDF2AD3F6B4000EF304 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -149,8 +163,18 @@
 				1C09E5A42AD0486A00C81723 /* RegisterUserRequest.swift */,
 				1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */,
 				1C5452EB2AD68F0600D6590C /* Users.swift */,
+				1C99AF1C2AD958CE00BCA2FE /* AllApps.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1C1043EE2AD8621900938A25 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C1043EF2AD9274400938A25 /* AllAppsCollectionViewCell.swift */,
+				1C1043F02AD9274400938A25 /* AllAppsCollectionViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		1C113F592ACAC0EC0010E79F /* WelcomScreenSlide */ = {
@@ -269,6 +293,8 @@
 				1CA73BDC2AD3F5CF000EF304 /* MADE Tommy Soft Medium PERSONAL USE.otf */,
 				1C7D63C12ACAB2A400E26C51 /* Inter-Thin.ttf */,
 				1C8449702AD5373F00C1AEE2 /* Inter-BoldItalic.otf */,
+				1C99AF1A2AD955FF00BCA2FE /* Inter-MediumItalic.otf */,
+				1C99AF182AD955B800BCA2FE /* Inter-Italic.otf */,
 				1C8449712AD5374000C1AEE2 /* Inter-LightItalic.otf */,
 				1C74AF572ACB375F001C28E3 /* Fontspring-DEMO-biennale-medium.otf */,
 			);
@@ -337,6 +363,9 @@
 		1CBB704C2AD5538800D2DEC8 /* AllApps */ = {
 			isa = PBXGroup;
 			children = (
+				1C1043EE2AD8621900938A25 /* cell */,
+				1C1043EA2AD8620C00938A25 /* AllAppsTableViewCell.swift */,
+				1C1043EB2AD8620C00938A25 /* AllAppsTableViewCell.xib */,
 			);
 			path = AllApps;
 			sourceTree = "<group>";
@@ -473,7 +502,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C99AF192AD955B800BCA2FE /* Inter-Italic.otf in Resources */,
 				1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */,
+				1C1043ED2AD8620C00938A25 /* AllAppsTableViewCell.xib in Resources */,
 				1C02085E2AD013BF0094F29E /* GoogleService-Info.plist in Resources */,
 				1C9724A42AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.xib in Resources */,
 				1CBB70502AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib in Resources */,
@@ -485,7 +516,9 @@
 				490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */,
 				1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */,
 				1C8449722AD5374000C1AEE2 /* Inter-BoldItalic.otf in Resources */,
+				1C1043F22AD9274400938A25 /* AllAppsCollectionViewCell.xib in Resources */,
 				1C7D63C32ACAB2A400E26C51 /* Inter-Thin.ttf in Resources */,
+				1C99AF1B2AD955FF00BCA2FE /* Inter-MediumItalic.otf in Resources */,
 				1C113F612ACAC5E40010E79F /* Slide.xib in Resources */,
 				490956BC2AC412880067EF05 /* Assets.xcassets in Resources */,
 				1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */,
@@ -549,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C007B372AD2E94A00BED4ED /* Validator.swift in Sources */,
+				1C1043EC2AD8620C00938A25 /* AllAppsTableViewCell.swift in Sources */,
 				1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */,
 				1CA73BEA2AD3FDE2000EF304 /* FavouriteViewController.swift in Sources */,
 				1C007B392AD2F75900BED4ED /* AlertManager.swift in Sources */,
@@ -561,12 +595,14 @@
 				1CA73BE62AD3F7B7000EF304 /* TabController.swift in Sources */,
 				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
 				1CBB70492AD543FD00D2DEC8 /* AllAppsHeaderView.swift in Sources */,
+				1C1043F12AD9274400938A25 /* AllAppsCollectionViewCell.swift in Sources */,
 				490956B02AC412880067EF05 /* AppDelegate.swift in Sources */,
 				1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */,
 				1C09E5A22AD043C300C81723 /* AuthService.swift in Sources */,
 				490956BA2AC412880067EF05 /* DuplicatedApps.xcdatamodeld in Sources */,
 				1C4E6DAA2AD816E200CDC219 /* AppFonts.swift in Sources */,
 				490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */,
+				1C99AF1D2AD958CE00BCA2FE /* AllApps.swift in Sources */,
 				1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */,
 				1C5452EC2AD68F0600D6590C /* Users.swift in Sources */,
 				1C95DF412AD3B9E800304DEF /* AppColors.swift in Sources */,
