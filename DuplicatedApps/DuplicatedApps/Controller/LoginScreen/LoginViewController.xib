@@ -40,6 +40,12 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration" translatesAutoresizingMaskIntoConstraints="NO" id="hpi-rb-54K">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="232"/>
                         </imageView>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VK8-eX-yWg">
+                            <rect key="frame" x="0.0" y="232" width="375" height="580"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-object" translatesAutoresizingMaskIntoConstraints="NO" id="dGH-9X-enC">
+                            <rect key="frame" x="0.0" y="202" width="375" height="215"/>
+                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OX-5n-Sck">
                             <rect key="frame" x="0.0" y="232" width="375" height="580"/>
                             <subviews>
@@ -117,16 +123,16 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wj2-zy-tw7">
-                                    <rect key="frame" x="116" y="497.33333333333337" width="143" height="23.666666666666629"/>
+                                    <rect key="frame" x="116" y="486.33333333333337" width="143" height="23.666666666666686"/>
                                     <fontDescription key="fontDescription" name="TTHoves-DemiBold" family="TT Hoves" pointSize="21"/>
                                     <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf9-9k-jGX">
-                                    <rect key="frame" x="148.66666666666666" y="426.66666666666663" width="78" height="55"/>
+                                    <rect key="frame" x="158" y="426.66666666666663" width="59" height="44"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="pf9-9k-jGX" secondAttribute="height" multiplier="78:59" constant="5.288135593220332" id="i02-cF-r8m"/>
-                                        <constraint firstAttribute="height" constant="55" id="sQB-ZV-ZUI"/>
+                                        <constraint firstAttribute="width" constant="59" id="l5n-ck-dxj"/>
+                                        <constraint firstAttribute="height" constant="44" id="sQB-ZV-ZUI"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" backgroundImage="login-apple-button"/>
@@ -179,7 +185,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="0.13725490196078433" green="0.098039215686274508" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="zpm-RL-7BA" firstAttribute="leading" secondItem="qbg-Yp-gxX" secondAttribute="trailing" constant="10" id="00t-sO-08j"/>
                                 <constraint firstItem="zpm-RL-7BA" firstAttribute="centerY" secondItem="eMr-qg-2NE" secondAttribute="centerY" id="0Ck-7x-Tsz"/>
@@ -249,11 +255,19 @@
                         <constraint firstAttribute="trailing" secondItem="3OX-5n-Sck" secondAttribute="trailing" id="69m-tl-s22"/>
                         <constraint firstItem="hpi-rb-54K" firstAttribute="leading" secondItem="3Js-2w-Eaz" secondAttribute="leading" id="C2G-98-9zT"/>
                         <constraint firstItem="hpi-rb-54K" firstAttribute="top" secondItem="3Js-2w-Eaz" secondAttribute="top" id="DP0-JF-VSn"/>
+                        <constraint firstItem="dGH-9X-enC" firstAttribute="leading" secondItem="3Js-2w-Eaz" secondAttribute="leading" id="JOo-iE-jBO"/>
+                        <constraint firstItem="VK8-eX-yWg" firstAttribute="height" secondItem="3Js-2w-Eaz" secondAttribute="height" multiplier="5/7" id="LkX-v8-2Gn"/>
                         <constraint firstItem="3OX-5n-Sck" firstAttribute="height" secondItem="3Js-2w-Eaz" secondAttribute="height" multiplier="5/7" id="TWo-Fl-e7v"/>
                         <constraint firstItem="3OX-5n-Sck" firstAttribute="leading" secondItem="3Js-2w-Eaz" secondAttribute="leading" id="Xej-eG-kPh"/>
+                        <constraint firstItem="3OX-5n-Sck" firstAttribute="top" secondItem="hpi-rb-54K" secondAttribute="bottom" id="afy-HJ-4N4"/>
+                        <constraint firstItem="dGH-9X-enC" firstAttribute="top" secondItem="hpi-rb-54K" secondAttribute="bottom" constant="-30" id="bBJ-p0-pXs"/>
+                        <constraint firstAttribute="trailing" secondItem="dGH-9X-enC" secondAttribute="trailing" id="bpc-4W-vQY"/>
+                        <constraint firstAttribute="bottom" secondItem="VK8-eX-yWg" secondAttribute="bottom" id="cNA-g3-suR"/>
+                        <constraint firstItem="VK8-eX-yWg" firstAttribute="leading" secondItem="3Js-2w-Eaz" secondAttribute="leading" id="dXa-30-srW"/>
                         <constraint firstAttribute="trailing" secondItem="hpi-rb-54K" secondAttribute="trailing" id="gYP-CC-pOH"/>
                         <constraint firstItem="3OX-5n-Sck" firstAttribute="top" secondItem="hpi-rb-54K" secondAttribute="bottom" id="jdb-hq-iWY"/>
                         <constraint firstItem="hpi-rb-54K" firstAttribute="height" secondItem="3Js-2w-Eaz" secondAttribute="height" multiplier="2/7" id="qbj-gB-aaL"/>
+                        <constraint firstAttribute="trailing" secondItem="VK8-eX-yWg" secondAttribute="trailing" id="zDS-uy-6fi"/>
                         <constraint firstAttribute="bottom" secondItem="3OX-5n-Sck" secondAttribute="bottom" id="zZ5-vb-Hni"/>
                     </constraints>
                 </view>
@@ -271,11 +285,13 @@
     </objects>
     <resources>
         <image name="Illustration" width="1720" height="1042"/>
+        <image name="background" width="430" height="688"/>
         <image name="background-button" width="1256" height="200"/>
         <image name="background-textfield" width="1256" height="220"/>
         <image name="item_left_line" width="392" height="4"/>
         <image name="item_right_line" width="392" height="4"/>
         <image name="login-apple-button" width="233" height="176"/>
+        <image name="login-object" width="430" height="215"/>
         <image name="login-textfield-key" width="74" height="74"/>
         <image name="login-textfield-person" width="70" height="67"/>
         <image name="login-textfield-unmask-pw" width="70" height="57"/>
