@@ -52,7 +52,7 @@ class LoginViewController: BaseViewController {
                 AlertManager.showSignInErrorAlert(on: self, with: error)
                 return
             }
-            let homeViewController = HomeViewController()
+            let homeViewController = TabController()
             self.navigationController?.pushViewController(homeViewController, animated: true)
         }
     }
@@ -62,7 +62,8 @@ class LoginViewController: BaseViewController {
         configTextFieldBackgroud()
         configCreateAccountText()
         registerForKeyboardNotifications()
-        setUpTextField(passwordLoginTextField, isSecureTextEntry: true)
+        setUpTextField(emailLoginTextField, isSecureTextEntry: false, placeholder: "Email")
+        setUpTextField(passwordLoginTextField, isSecureTextEntry: true, placeholder: "••••••••")
     }
     
     override func keyboardWillHide(notification: NSNotification) {
@@ -92,9 +93,16 @@ extension LoginViewController {
 // MARK: - Setup Text Field
 extension LoginViewController {
     
-    private func setUpTextField(_ textField: UITextField, isSecureTextEntry: Bool) {
+    private func setUpTextField(_ textField: UITextField, isSecureTextEntry: Bool, placeholder: String) {
+        let placeholderAttributes: [NSAttributedString.Key: Any] = [
+            .font: AppFonts.fontPoppinsRegular(size: 14)!,
+            .foregroundColor: AppColors.silverChalice
+        ]
         textField.delegate = self
         textField.isSecureTextEntry = isSecureTextEntry
+        
+        let attributedPlaceholder = NSAttributedString(string: placeholder, attributes: placeholderAttributes)
+        textField.attributedPlaceholder = attributedPlaceholder
     }
     
     private func togglePasswordVisibility() {
