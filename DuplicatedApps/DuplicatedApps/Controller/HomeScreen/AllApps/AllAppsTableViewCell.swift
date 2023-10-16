@@ -9,6 +9,10 @@ import UIKit
 
 class AllAppsTableViewCell: UITableViewCell {
 
+    struct Constants {
+        static let collectionViewCellRatio: CGFloat = 127/155
+    }
+    
     var appsCollections: [AllApps] = [
         AllApps(appImage: AppImages.googleIcon, position: "FE Developer", location: "Google - Jakarta, ID", mailContact: "mail@mail.com"),
         AllApps(appImage: AppImages.facebookLiteIcon, position: "Finance", location: "Facebook - Jakarta, ID", mailContact: "Acc1"),
@@ -18,7 +22,7 @@ class AllAppsTableViewCell: UITableViewCell {
         AllApps(appImage: AppImages.twitterIcon, position: "BE Developer", location: "Twitter - Seatle, USA", mailContact: "twitter@mail.com"),
     ]
     
-    @IBOutlet private var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,7 +37,6 @@ extension AllAppsTableViewCell {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: AllAppsCollectionViewCell.className, bundle: nil),
                                         forCellWithReuseIdentifier: AllAppsCollectionViewCell.className)
-        
     }
 }
 
@@ -54,4 +57,11 @@ extension AllAppsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
     }
 }
 
-
+// MARK: - Collection View FLowLayout
+extension AllAppsTableViewCell: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidthRatio = collectionView.frame.size.width/2 - 10
+        let collectionViewHeightRatio = collectionViewWidthRatio * Constants.collectionViewCellRatio
+        return CGSize(width: collectionViewWidthRatio , height: collectionViewHeightRatio)
+    }
+}

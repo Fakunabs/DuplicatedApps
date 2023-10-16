@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     private var headerHeight: CGFloat = 31
     
     @IBOutlet private weak var homeTableView: UITableView!
-    @IBOutlet private var welcomeUserLabel: UILabel!
+    @IBOutlet private weak var welcomeUserLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,7 +17,7 @@ class MostPopularAppsTableViewCell: UITableViewCell {
         static var collectionViewEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 27)
     }
     
-    @IBOutlet private var collectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {

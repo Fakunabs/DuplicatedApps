@@ -40,12 +40,10 @@ class SignUpViewController: BaseViewController {
     @IBOutlet private weak var passwordSignalWeakView: UIView!
     @IBOutlet private weak var passwordSignalMediumView: UIView!
     @IBOutlet private weak var passwordSignalStrongView: UIView!
-    
     @IBOutlet private weak var passwordAlertLabel: UILabel!
+    @IBOutlet private weak var showHidePasswordImageView: UIImageView!
     
-    @IBOutlet weak var showHidePasswordImageView: UIImageView!
-    
-    @IBAction func didTapShowPasswordAction(_ sender: Any) {
+    @IBAction private func didTapShowPasswordAction(_ sender: Any) {
         togglePasswordVisibility()
     }
     
@@ -162,6 +160,7 @@ extension SignUpViewController {
         passwordSignalWeakView.isHidden = isHidden
         passwordSignalMediumView.isHidden = isHidden
         passwordSignalStrongView.isHidden = isHidden
+        passwordAlertLabel.isHidden = isHidden
         showHidePasswordImageView.isHidden = !isHidden
     }
 }
@@ -173,25 +172,28 @@ extension SignUpViewController: UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let text = textField.text as NSString? else { return true }
-        let newText = text.replacingCharacters(in: range, with: string)
-        if newText.isEmpty {
-            passwordStrength = .empty
-            updatePasswordStrengthViewsAndIconVisibility(isHidden: true)
-        } else {
-            updatePasswordStrengthViewsAndIconVisibility(isHidden: false)
-            if Validator.isPasswordValid(for: newText) {
-                passwordStrength = .strong
-            } else if newText.count >= 6 {
-                passwordStrength = .medium
+        if textField == passwordSignUpTextField {
+            guard let text = textField.text as NSString? else { return true }
+            let newText = text.replacingCharacters(in: range, with: string)
+            if newText.isEmpty {
+                passwordStrength = .empty
+                updatePasswordStrengthViewsAndIconVisibility(isHidden: true)
             } else {
-                passwordStrength = .weak
+                updatePasswordStrengthViewsAndIconVisibility(isHidden: false)
+                if Validator.isPasswordValid(for: newText) {
+                    passwordStrength = .strong
+                } else if newText.count >= 6 {
+                    passwordStrength = .medium
+                } else {
+                    passwordStrength = .weak
+                }
+                updatePasswordAlertLabel()
+                updatePasswordStrengthUI()
+
             }
         }
-
-        updatePasswordStrengthUI()
-        updatePasswordAlertLabel()
 
         return true
     }
 }
+

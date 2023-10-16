@@ -17,10 +17,8 @@ class LoginViewController: BaseViewController {
     private var panGestureRecognizer: UIPanGestureRecognizer?
     private var initialTouchPoint: CGPoint = CGPoint(x: 0, y: 0)
     
-    
     @IBOutlet private weak var loginTextFieldView: UIView!
     @IBOutlet private weak var createAccountLabel: UILabel!
-    
     @IBOutlet private weak var emailLoginTextField: UITextField!
     @IBOutlet private weak var passwordLoginTextField: UITextField!
     @IBOutlet private weak var viewBottomConstraint: NSLayoutConstraint!
@@ -29,8 +27,7 @@ class LoginViewController: BaseViewController {
     @IBAction private func didTapShowPasswordAction(_ sender: Any) {
         togglePasswordVisibility()
     }
-    
-    
+
     @IBAction private func didTapSignInAction(_ sender: Any) {
         let loginRequest = LoginUserRequest(
             email: self.emailLoginTextField.text ?? "",
