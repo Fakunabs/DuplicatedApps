@@ -35,6 +35,7 @@ class HomeViewController: UIViewController {
         // Hide navigation bar
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
     private func configTableView() {

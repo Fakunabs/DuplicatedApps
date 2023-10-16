@@ -12,4 +12,5 @@ target 'DuplicatedApps' do
   pod 'FirebaseAuth'
   pod 'FirebaseStorage'
   pod 'FirebaseFirestore'
+  pod 'SwiftLint'
 end
