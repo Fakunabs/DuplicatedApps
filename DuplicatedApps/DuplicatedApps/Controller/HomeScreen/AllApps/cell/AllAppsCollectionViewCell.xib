@@ -28,32 +28,32 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beN-e0-W2n">
                         <rect key="frame" x="0.0" y="0.0" width="172" height="141"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FE Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh5-Vs-3pW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh5-Vs-3pW">
                                 <rect key="frame" x="14" y="76" width="144" height="19.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Inter-MediumItalic" family="Inter" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-screen-save-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZJx-QJ-zDU">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-screen-save-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZJx-QJ-zDU">
                                 <rect key="frame" x="146" y="14" width="12" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="2vE-Hp-xCG"/>
                                     <constraint firstAttribute="width" constant="12" id="ciL-cK-whw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google - Jakarta, ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-x4-jee">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Social" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-x4-jee">
                                 <rect key="frame" x="14" y="99.666666666666671" width="144" height="14"/>
                                 <fontDescription key="fontDescription" name="Inter-LightItalic" family="Inter" pointSize="11"/>
                                 <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mail@mail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHH-z1-Dh2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acount Linking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHH-z1-Dh2">
                                 <rect key="frame" x="14" y="117" width="144" height="14"/>
                                 <fontDescription key="fontDescription" name="Inter-LightItalic" family="Inter" pointSize="11"/>
                                 <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DDS-um-Axb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen-add-cell-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DDS-um-Axb">
                                 <rect key="frame" x="14" y="14" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="6Xe-zi-exL"/>
@@ -89,7 +89,7 @@
             </constraints>
             <size key="customSize" width="115" height="176"/>
             <connections>
-                <outlet property="appIconImage" destination="DDS-um-Axb" id="7U8-gD-D92"/>
+                <outlet property="appIconImage" destination="DDS-um-Axb" id="uUj-Mo-HAk"/>
                 <outlet property="containerView" destination="beN-e0-W2n" id="T71-P2-jjU"/>
                 <outlet property="jobPostionLabel" destination="Sh5-Vs-3pW" id="lZ6-Wz-e97"/>
                 <outlet property="locationLabel" destination="Fsc-x4-jee" id="3qb-4R-JMA"/>
@@ -99,7 +99,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="google-icon" width="41" height="41"/>
         <image name="home-screen-save-icon" width="12" height="16"/>
+        <image name="homescreen-add-cell-icon" width="41" height="41"/>
     </resources>
 </document>

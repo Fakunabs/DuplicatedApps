@@ -32,6 +32,7 @@ struct AppImages {
     static let uxIcon = UIImage(named: "ux-icon")
     static let appleIcon = UIImage(named: "apple-icon")
     static let twitterIcon = UIImage(named: "twitter-icon")
+    static let homeScreenAddCellIcon = UIImage(named: "homescreen-add-cell-icon")
 }
 
 

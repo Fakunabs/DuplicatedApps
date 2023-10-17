@@ -374,6 +374,7 @@
 		1CA73BDB2AD3F528000EF304 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1CEA07B52ADDAB3900BB4E40 /* ListApps */,
 				1CBB704C2AD5538800D2DEC8 /* AllApps */,
 				1CBB704B2AD54F2B00D2DEC8 /* MostPopularApps */,
 				1C8449742AD53B5400C1AEE2 /* Header */,
@@ -445,6 +446,13 @@
 				1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		1CEA07B52ADDAB3900BB4E40 /* ListApps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListApps;
 			sourceTree = "<group>";
 		};
 		490956A32AC412870067EF05 = {

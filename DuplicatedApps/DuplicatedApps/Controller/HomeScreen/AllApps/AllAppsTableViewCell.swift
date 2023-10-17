@@ -8,18 +8,13 @@
 import UIKit
 
 class AllAppsTableViewCell: UITableViewCell {
-
+    
     struct Constants {
         static let collectionViewCellRatio: CGFloat = 127/155
     }
     
-    var appsCollections: [AllApps] = [
-        AllApps(appImage: AppImages.googleIcon, position: "FE Developer", location: "Google - Jakarta, ID", mailContact: "mail@mail.com"),
-        AllApps(appImage: AppImages.facebookLiteIcon, position: "Finance", location: "Facebook - Jakarta, ID", mailContact: "Acc1"),
-        AllApps(appImage: AppImages.graphicDesignerIcon, position: "Graphic Designer", location: "Bukalapak - Jakarta, ID", mailContact: "graphics"),
-        AllApps(appImage: AppImages.uxIcon, position: "UX Writter", location: "Gojek - Jakarta, ID", mailContact: "my writter app"),
-        AllApps(appImage: AppImages.appleIcon, position: "Mobile Developer", location: "Apple - California, USA", mailContact: "apple@icloud.com"),
-        AllApps(appImage: AppImages.twitterIcon, position: "BE Developer", location: "Twitter - Seatle, USA", mailContact: "twitter@mail.com"),
+    var allAppsCollectionView : [AllApps] = [
+        AllApps(appImage: AppImages.homeScreenAddCellIcon, position: "Add your app", location: "Multiple Social", mailContact: "Account Linking"),
     ]
     
     @IBOutlet private weak var collectionView: UICollectionView!
@@ -36,7 +31,11 @@ extension AllAppsTableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: AllAppsCollectionViewCell.className, bundle: nil),
-                                        forCellWithReuseIdentifier: AllAppsCollectionViewCell.className)
+                                forCellWithReuseIdentifier: AllAppsCollectionViewCell.className)
+    }
+    
+    func reloadCollectionCellData() {
+        collectionView.reloadData()
     }
 }
 
@@ -44,16 +43,23 @@ extension AllAppsTableViewCell {
 extension AllAppsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return appsCollections.count
+        return allAppsCollectionView.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let allAppsCell = collectionView.dequeueReusableCell(withReuseIdentifier: AllAppsCollectionViewCell.className, for: indexPath) as? AllAppsCollectionViewCell
-        else {
-            return UICollectionViewCell()
-        }
-        allAppsCell.setUpCell(allApps: appsCollections[indexPath.row])
+        guard let allAppsCell = collectionView.dequeueReusableCell(withReuseIdentifier: AllAppsCollectionViewCell.className, for: indexPath) as? AllAppsCollectionViewCell else { return UICollectionViewCell() }
+        allAppsCell.setUpCell(allApps: allAppsCollectionView[indexPath.row])
         return allAppsCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.item == 0 {
+            let newApp = AllApps(appImage: AppImages.facebookLiteIcon, position: "FE Developer", location: "A", mailContact: "A")
+            allAppsCollectionView.append(newApp)
+            collectionView.reloadData()
+        } else {
+            print("b")
+        }
     }
 }
 

@@ -86,6 +86,7 @@ extension HomeViewController: UITableViewDataSource {
             else {
                 return UITableViewCell()
             }
+            allAppsCell.reloadCollectionCellData()
             return allAppsCell
         }
     }
