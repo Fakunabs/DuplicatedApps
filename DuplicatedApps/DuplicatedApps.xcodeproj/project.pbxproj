@@ -76,8 +76,6 @@
 		1CBB704F2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */; };
 		1CBB70502AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */; };
 		1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */; };
-		1CEA07B82ADE579800BB4E40 /* ListAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA07B62ADE579800BB4E40 /* ListAppsView.swift */; };
-		1CEA07B92ADE579800BB4E40 /* ListAppsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA07B72ADE579800BB4E40 /* ListAppsView.xib */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
 		490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B12AC412880067EF05 /* SceneDelegate.swift */; };
 		490956B42AC412880067EF05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B32AC412880067EF05 /* ViewController.swift */; };
@@ -85,6 +83,8 @@
 		490956BA2AC412880067EF05 /* DuplicatedApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 490956B82AC412880067EF05 /* DuplicatedApps.xcdatamodeld */; };
 		490956BC2AC412880067EF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490956BB2AC412880067EF05 /* Assets.xcassets */; };
 		490956BF2AC412880067EF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490956BD2AC412880067EF05 /* LaunchScreen.storyboard */; };
+		497230932AE26B17004959E9 /* CustomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497230922AE26B17004959E9 /* CustomListView.swift */; };
+		497230952AE26B21004959E9 /* CustomListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497230942AE26B21004959E9 /* CustomListView.xib */; };
 		CDDD9B5896B18D4955D8911A /* Pods_DuplicatedApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6121DC98738B32C2F37993C /* Pods_DuplicatedApps.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,8 +159,6 @@
 		1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularAppsTableViewCell.swift; sourceTree = "<group>"; };
 		1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularAppsTableViewCell.xib; sourceTree = "<group>"; };
 		1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		1CEA07B62ADE579800BB4E40 /* ListAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppsView.swift; sourceTree = "<group>"; };
-		1CEA07B72ADE579800BB4E40 /* ListAppsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListAppsView.xib; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490956AF2AC412880067EF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		490956B12AC412880067EF05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +168,8 @@
 		490956BB2AC412880067EF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490956BE2AC412880067EF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490956C02AC412880067EF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497230922AE26B17004959E9 /* CustomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListView.swift; sourceTree = "<group>"; };
+		497230942AE26B21004959E9 /* CustomListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomListView.xib; sourceTree = "<group>"; };
 		523EF925768B00070C3F7638 /* Pods-DuplicatedApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuplicatedApps.release.xcconfig"; path = "Target Support Files/Pods-DuplicatedApps/Pods-DuplicatedApps.release.xcconfig"; sourceTree = "<group>"; };
 		F6121DC98738B32C2F37993C /* Pods_DuplicatedApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuplicatedApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -469,8 +469,8 @@
 			isa = PBXGroup;
 			children = (
 				1C42B6892ADE89DF008B7ACF /* cell */,
-				1CEA07B62ADE579800BB4E40 /* ListAppsView.swift */,
-				1CEA07B72ADE579800BB4E40 /* ListAppsView.xib */,
+				497230922AE26B17004959E9 /* CustomListView.swift */,
+				497230942AE26B21004959E9 /* CustomListView.xib */,
 			);
 			path = ListApps;
 			sourceTree = "<group>";
@@ -594,7 +594,6 @@
 			files = (
 				1C99AF192AD955B800BCA2FE /* Inter-Italic.otf in Resources */,
 				1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */,
-				1CEA07B92ADE579800BB4E40 /* ListAppsView.xib in Resources */,
 				1C6B02F12ADA516E00EED468 /* Poppins-Italic.ttf in Resources */,
 				1C6B02F92ADA516E00EED468 /* Poppins-Regular.ttf in Resources */,
 				1C6B02F52ADA516E00EED468 /* Poppins-Bold.ttf in Resources */,
@@ -633,6 +632,7 @@
 				490956B72AC412880067EF05 /* Main.storyboard in Resources */,
 				1C9886D02ACD8692001750CF /* SignUpViewController.xib in Resources */,
 				1C6B02F22ADA516E00EED468 /* Poppins-Light.ttf in Resources */,
+				497230952AE26B21004959E9 /* CustomListView.xib in Resources */,
 				1CA73BE12AD3F6B4000EF304 /* HomeViewController.xib in Resources */,
 				1C6B02FE2ADA516E00EED468 /* Poppins-ThinItalic.ttf in Resources */,
 				1C1043E92AD849E000938A25 /* MostPopularAppsHeaderView.xib in Resources */,
@@ -715,7 +715,6 @@
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
 				1CA73BE02AD3F6B4000EF304 /* HomeViewController.swift in Sources */,
 				1C6B03122ADA9CCE00EED468 /* TabController.swift in Sources */,
-				1CEA07B82ADE579800BB4E40 /* ListAppsView.swift in Sources */,
 				1C1043E82AD849E000938A25 /* MostPopularAppsHeaderView.swift in Sources */,
 				1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */,
 				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
@@ -739,6 +738,7 @@
 				1C09E5A52AD0486A00C81723 /* RegisterUserRequest.swift in Sources */,
 				1C9724A32AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.swift in Sources */,
 				1C42B68C2ADE8A08008B7ACF /* ListAppsTableViewCell.swift in Sources */,
+				497230932AE26B17004959E9 /* CustomListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

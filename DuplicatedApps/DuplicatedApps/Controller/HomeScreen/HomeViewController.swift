@@ -23,12 +23,13 @@ class HomeViewController: UIViewController {
         static let helloUserText = "Hello, Gustano"
     }
     
-    let listView = ListAppsView.instanceFromNib()
+//    let listView = ListAppsView.instanceFromNib()
     
     weak var delegate: HomeViewControllerDelegate?
     
     private var headerHeight: CGFloat = 31
     
+    @IBOutlet weak var listView: CustomListView!
     @IBOutlet private weak var homeTableView: UITableView!
     @IBOutlet private weak var welcomeUserLabel: UILabel!
     
@@ -142,12 +143,13 @@ extension HomeViewController {
     }
     
     private func addSubView() {
-        self.view.addSubview(self.listView)
+//        self.listView.isHidden = true
+//        self.view.addSubview(self.listView)
     }
 }
 
 extension HomeViewController: AllAppsTableViewCellDelegate {
     func showListView() {
-        self.listView.isHidden = false
+//        self.listView.isHidden = false
     }
 }

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomListView" customModule="DuplicatedApps" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="KHQ-IW-slr"/>
+                <outlet property="listView" destination="jdn-6z-lWT" id="2Z2-C4-JcS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="616" height="969"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahN-uO-MJf">
+                    <rect key="frame" x="293" y="929" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="9Ry-Fx-lFy"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="IPA-dy-RxW"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="N1F-4P-YJU"/>
+                        <constraint firstAttribute="height" constant="30" id="ug9-cX-6Iy"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="dismiss-button"/>
+                    <connections>
+                        <action selector="doClose:" destination="-1" eventType="touchUpInside" id="q3x-tK-72J"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-6z-lWT">
+                    <rect key="frame" x="0.0" y="0.0" width="616" height="869"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gzv-tq-fFU"/>
+                        <outlet property="delegate" destination="-1" id="c96-yN-foA"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jdn-6z-lWT" secondAttribute="trailing" id="6V4-iu-fsd"/>
+                <constraint firstItem="jdn-6z-lWT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c8T-1M-qVC"/>
+                <constraint firstItem="jdn-6z-lWT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dYZ-YL-mXy"/>
+                <constraint firstItem="ahN-uO-MJf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dlE-qa-wxu"/>
+                <constraint firstItem="ahN-uO-MJf" firstAttribute="top" secondItem="jdn-6z-lWT" secondAttribute="bottom" constant="60" id="gBG-2q-fb6"/>
+                <constraint firstAttribute="bottom" secondItem="ahN-uO-MJf" secondAttribute="bottom" constant="10" id="vCi-Pg-jZ4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="348.09160305343511" y="-21.47887323943662"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dismiss-button" width="37" height="37"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
