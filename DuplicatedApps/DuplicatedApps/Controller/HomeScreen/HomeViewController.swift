@@ -13,11 +13,19 @@ enum HomeSectionType: CaseIterable {
     case allapps
 }
 
+protocol HomeViewControllerDelegate: AnyObject {
+    func presentToViewController(viewController: UIViewController)
+}
+
 class HomeViewController: UIViewController {
     
     struct Constants {
         static let helloUserText = "Hello, Gustano"
     }
+    
+    let listView = ListAppsView.instanceFromNib()
+    
+    weak var delegate: HomeViewControllerDelegate?
     
     private var headerHeight: CGFloat = 31
     
@@ -28,8 +36,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         configTableView()
         configWelcomeText()
+        addSubView()
     }
     
+    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Hide navigation bar
@@ -86,6 +97,7 @@ extension HomeViewController: UITableViewDataSource {
             else {
                 return UITableViewCell()
             }
+            allAppsCell.delegate = self
             allAppsCell.reloadCollectionCellData()
             return allAppsCell
         }
@@ -127,5 +139,15 @@ extension HomeViewController {
         let range = (attributedString.string as NSString).range(of: "Gustano")
         attributedString.addAttributes([.font: AppFonts.fontInterBoldItalic(size: 17) as Any], range: range)
         welcomeUserLabel.attributedText = attributedString
+    }
+    
+    private func addSubView() {
+        self.view.addSubview(self.listView)
+    }
+}
+
+extension HomeViewController: AllAppsTableViewCellDelegate {
+    func showListView() {
+        self.listView.isHidden = false
     }
 }

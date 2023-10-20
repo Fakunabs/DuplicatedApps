@@ -12,7 +12,7 @@ class AllAppsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private var containerView: UIView!
     @IBOutlet private var appIconImage: UIImageView!
-    @IBOutlet private var jobPostionLabel: UILabel!
+    @IBOutlet private var jobPostionLabel: UILabel! // TODO : Change to jobPositionLabel
     @IBOutlet private var locationLabel: UILabel!
     @IBOutlet private var mailLabel: UILabel!
     

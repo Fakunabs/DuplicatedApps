@@ -3,4 +3,54 @@
    uuid = "3AA62015-F6B9-4F1E-8B58-30DDD5F9A89E"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24602A60-AB43-465A-A984-196693E3229C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DuplicatedApps/Controller/HomeScreen/AllApps/cell/AllAppsCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "AllAppsCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "24602A60-AB43-465A-A984-196693E3229C - 2b252b4ba85047cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.AllAppsCollectionViewCell.init(frame: __C.CGRect) -&gt; DuplicatedApps.AllAppsCollectionViewCell"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/AllApps/cell/AllAppsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "24602A60-AB43-465A-A984-196693E3229C - 30871ab6e6f19b39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuplicatedApps.AllAppsCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DuplicatedApps.AllAppsCollectionViewCell&gt;"
+                  moduleName = "DuplicatedApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laptoptt/Documents/DuplicateApps/DuplicatedApps/DuplicatedApps/Controller/HomeScreen/AllApps/cell/AllAppsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol AllAppsTableViewCellDelegate: AnyObject {
+    func showListView()
+}
+
 class AllAppsTableViewCell: UITableViewCell {
     
     struct Constants {
         static let collectionViewCellRatio: CGFloat = 127/155
     }
+    
+    weak var delegate: AllAppsTableViewCellDelegate?
     
     var allAppsCollectionView : [AllApps] = [
         AllApps(appImage: AppImages.homeScreenAddCellIcon, position: "Add your app", location: "Multiple Social", mailContact: "Account Linking"),
@@ -54,9 +60,10 @@ extension AllAppsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.item == 0 {
-            let newApp = AllApps(appImage: AppImages.facebookLiteIcon, position: "FE Developer", location: "A", mailContact: "A")
-            allAppsCollectionView.append(newApp)
-            collectionView.reloadData()
+//            let newApp = AllApps(appImage: AppImages.facebookLiteIcon, position: "FE Developer", location: "A", mailContact: "A")
+//            allAppsCollectionView.append(newApp)
+//            collectionView.reloadData()
+            delegate?.showListView()
         } else {
             print("b")
         }

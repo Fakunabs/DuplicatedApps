@@ -26,6 +26,8 @@
 		1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */; };
 		1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */; };
 		1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A172ACAA4CF009824D5 /* AppImages.swift */; };
+		1C42B68C2ADE8A08008B7ACF /* ListAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42B68A2ADE8A08008B7ACF /* ListAppsTableViewCell.swift */; };
+		1C42B68D2ADE8A08008B7ACF /* ListAppsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C42B68B2ADE8A08008B7ACF /* ListAppsTableViewCell.xib */; };
 		1C4E6DAA2AD816E200CDC219 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4E6DA92AD816E200CDC219 /* AppFonts.swift */; };
 		1C5452EC2AD68F0600D6590C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5452EB2AD68F0600D6590C /* Users.swift */; };
 		1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */; };
@@ -74,6 +76,8 @@
 		1CBB704F2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */; };
 		1CBB70502AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */; };
 		1CC6BCD62ACFEDA2007AB99D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */; };
+		1CEA07B82ADE579800BB4E40 /* ListAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA07B62ADE579800BB4E40 /* ListAppsView.swift */; };
+		1CEA07B92ADE579800BB4E40 /* ListAppsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA07B72ADE579800BB4E40 /* ListAppsView.xib */; };
 		490956B02AC412880067EF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956AF2AC412880067EF05 /* AppDelegate.swift */; };
 		490956B22AC412880067EF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B12AC412880067EF05 /* SceneDelegate.swift */; };
 		490956B42AC412880067EF05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490956B32AC412880067EF05 /* ViewController.swift */; };
@@ -105,6 +109,8 @@
 		1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		1C1E9A172ACAA4CF009824D5 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		1C42B68A2ADE8A08008B7ACF /* ListAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppsTableViewCell.swift; sourceTree = "<group>"; };
+		1C42B68B2ADE8A08008B7ACF /* ListAppsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListAppsTableViewCell.xib; sourceTree = "<group>"; };
 		1C4E6DA92AD816E200CDC219 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		1C5452EB2AD68F0600D6590C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,8 @@
 		1CBB704D2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularAppsTableViewCell.swift; sourceTree = "<group>"; };
 		1CBB704E2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularAppsTableViewCell.xib; sourceTree = "<group>"; };
 		1CC6BCD52ACFEDA2007AB99D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1CEA07B62ADE579800BB4E40 /* ListAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppsView.swift; sourceTree = "<group>"; };
+		1CEA07B72ADE579800BB4E40 /* ListAppsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListAppsView.xib; sourceTree = "<group>"; };
 		490956AC2AC412880067EF05 /* DuplicatedApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplicatedApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490956AF2AC412880067EF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		490956B12AC412880067EF05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +271,15 @@
 				1C4E6DA92AD816E200CDC219 /* AppFonts.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		1C42B6892ADE89DF008B7ACF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C42B68A2ADE8A08008B7ACF /* ListAppsTableViewCell.swift */,
+				1C42B68B2ADE8A08008B7ACF /* ListAppsTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		1C4E6DA72AD814E100CDC219 /* Allapps */ = {
@@ -451,6 +468,9 @@
 		1CEA07B52ADDAB3900BB4E40 /* ListApps */ = {
 			isa = PBXGroup;
 			children = (
+				1C42B6892ADE89DF008B7ACF /* cell */,
+				1CEA07B62ADE579800BB4E40 /* ListAppsView.swift */,
+				1CEA07B72ADE579800BB4E40 /* ListAppsView.xib */,
 			);
 			path = ListApps;
 			sourceTree = "<group>";
@@ -476,20 +496,20 @@
 		490956AE2AC412880067EF05 /* DuplicatedApps */ = {
 			isa = PBXGroup;
 			children = (
-				1C6B03002ADA6ECA00EED468 /* Modules */,
-				1CA73BE22AD3F708000EF304 /* Supporting */,
-				1C09E5A32AD0483800C81723 /* Models */,
 				1C09E5A02AD0439D00C81723 /* Auth */,
-				1C7D63BC2ACAB21700E26C51 /* Controller */,
-				1C7D63BB2ACAB1E800E26C51 /* Resources */,
 				1C1E9A162ACAA4B5009824D5 /* Constants */,
-				1C1E9A132ACAA2F8009824D5 /* Extensions */,
-				490956B32AC412880067EF05 /* ViewController.swift */,
-				490956B52AC412880067EF05 /* Main.storyboard */,
-				490956BD2AC412880067EF05 /* LaunchScreen.storyboard */,
-				490956C02AC412880067EF05 /* Info.plist */,
-				1C02085D2AD013BF0094F29E /* GoogleService-Info.plist */,
+				1C7D63BC2ACAB21700E26C51 /* Controller */,
 				490956B82AC412880067EF05 /* DuplicatedApps.xcdatamodeld */,
+				1C1E9A132ACAA2F8009824D5 /* Extensions */,
+				1C02085D2AD013BF0094F29E /* GoogleService-Info.plist */,
+				490956C02AC412880067EF05 /* Info.plist */,
+				490956BD2AC412880067EF05 /* LaunchScreen.storyboard */,
+				490956B52AC412880067EF05 /* Main.storyboard */,
+				1C09E5A32AD0483800C81723 /* Models */,
+				1C6B03002ADA6ECA00EED468 /* Modules */,
+				1C7D63BB2ACAB1E800E26C51 /* Resources */,
+				1CA73BE22AD3F708000EF304 /* Supporting */,
+				490956B32AC412880067EF05 /* ViewController.swift */,
 			);
 			path = DuplicatedApps;
 			sourceTree = "<group>";
@@ -574,6 +594,7 @@
 			files = (
 				1C99AF192AD955B800BCA2FE /* Inter-Italic.otf in Resources */,
 				1CA73BEB2AD3FDE2000EF304 /* FavouriteViewController.xib in Resources */,
+				1CEA07B92ADE579800BB4E40 /* ListAppsView.xib in Resources */,
 				1C6B02F12ADA516E00EED468 /* Poppins-Italic.ttf in Resources */,
 				1C6B02F92ADA516E00EED468 /* Poppins-Regular.ttf in Resources */,
 				1C6B02F52ADA516E00EED468 /* Poppins-Bold.ttf in Resources */,
@@ -604,6 +625,7 @@
 				1C99AF1B2AD955FF00BCA2FE /* Inter-MediumItalic.otf in Resources */,
 				1C113F612ACAC5E40010E79F /* Slide.xib in Resources */,
 				490956BC2AC412880067EF05 /* Assets.xcassets in Resources */,
+				1C42B68D2ADE8A08008B7ACF /* ListAppsTableViewCell.xib in Resources */,
 				1C6B02FD2ADA516E00EED468 /* Poppins-LightItalic.ttf in Resources */,
 				1C74AF562ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.xib in Resources */,
 				1C7D63C22ACAB2A400E26C51 /* Inter-Medium.ttf in Resources */,
@@ -693,6 +715,7 @@
 				490956B42AC412880067EF05 /* ViewController.swift in Sources */,
 				1CA73BE02AD3F6B4000EF304 /* HomeViewController.swift in Sources */,
 				1C6B03122ADA9CCE00EED468 /* TabController.swift in Sources */,
+				1CEA07B82ADE579800BB4E40 /* ListAppsView.swift in Sources */,
 				1C1043E82AD849E000938A25 /* MostPopularAppsHeaderView.swift in Sources */,
 				1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */,
 				1C1E9A182ACAA4CF009824D5 /* AppImages.swift in Sources */,
@@ -715,6 +738,7 @@
 				1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */,
 				1C09E5A52AD0486A00C81723 /* RegisterUserRequest.swift in Sources */,
 				1C9724A32AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.swift in Sources */,
+				1C42B68C2ADE8A08008B7ACF /* ListAppsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
