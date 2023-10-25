@@ -22,6 +22,8 @@
 		1C1043F22AD9274400938A25 /* AllAppsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1043F02AD9274400938A25 /* AllAppsCollectionViewCell.xib */; };
 		1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C113F5E2ACAC5B10010E79F /* Slide.swift */; };
 		1C113F612ACAC5E40010E79F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C113F602ACAC5E40010E79F /* Slide.xib */; };
+		1C18314C2AE9055800E71966 /* AppDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18314A2AE9055800E71966 /* AppDescriptionView.swift */; };
+		1C18314D2AE9055800E71966 /* AppDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C18314B2AE9055800E71966 /* AppDescriptionView.xib */; };
 		1C1E9A112ACAA29F009824D5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */; };
 		1C1E9A122ACAA29F009824D5 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */; };
 		1C1E9A152ACAA313009824D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */; };
@@ -105,6 +107,8 @@
 		1C1043F02AD9274400938A25 /* AllAppsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAppsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1C113F5E2ACAC5B10010E79F /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		1C113F602ACAC5E40010E79F /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		1C18314A2AE9055800E71966 /* AppDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDescriptionView.swift; sourceTree = "<group>"; };
+		1C18314B2AE9055800E71966 /* AppDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppDescriptionView.xib; sourceTree = "<group>"; };
 		1C1E9A0F2ACAA29F009824D5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1C1E9A102ACAA29F009824D5 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		1C1E9A142ACAA313009824D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
@@ -222,6 +226,15 @@
 				1C113F602ACAC5E40010E79F /* Slide.xib */,
 			);
 			path = WelcomScreenSlide;
+			sourceTree = "<group>";
+		};
+		1C1831452AE902DF00E71966 /* AppsDescription */ = {
+			isa = PBXGroup;
+			children = (
+				1C18314A2AE9055800E71966 /* AppDescriptionView.swift */,
+				1C18314B2AE9055800E71966 /* AppDescriptionView.xib */,
+			);
+			path = AppsDescription;
 			sourceTree = "<group>";
 		};
 		1C1E9A0C2ACAA1CC009824D5 /* WelcomeScreen */ = {
@@ -391,6 +404,7 @@
 		1CA73BDB2AD3F528000EF304 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1C1831452AE902DF00E71966 /* AppsDescription */,
 				1CEA07B52ADDAB3900BB4E40 /* ListApps */,
 				1CBB704C2AD5538800D2DEC8 /* AllApps */,
 				1CBB704B2AD54F2B00D2DEC8 /* MostPopularApps */,
@@ -599,6 +613,7 @@
 				1C6B02F52ADA516E00EED468 /* Poppins-Bold.ttf in Resources */,
 				1C1043ED2AD8620C00938A25 /* AllAppsTableViewCell.xib in Resources */,
 				1C02085E2AD013BF0094F29E /* GoogleService-Info.plist in Resources */,
+				1C18314D2AE9055800E71966 /* AppDescriptionView.xib in Resources */,
 				1C6B02F62ADA516E00EED468 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				1C9724A42AD7C86900134FB6 /* MostPopularAppsCollectionViewCell.xib in Resources */,
 				1C6B02F02ADA516E00EED468 /* Poppins-SemiBoldItalic.ttf in Resources */,
@@ -708,6 +723,7 @@
 				1C007B372AD2E94A00BED4ED /* Validator.swift in Sources */,
 				1C1043EC2AD8620C00938A25 /* AllAppsTableViewCell.swift in Sources */,
 				1C95DF3F2AD3B9A700304DEF /* UIColor+Extension.swift in Sources */,
+				1C18314C2AE9055800E71966 /* AppDescriptionView.swift in Sources */,
 				1CA73BEA2AD3FDE2000EF304 /* FavouriteViewController.swift in Sources */,
 				1C007B392AD2F75900BED4ED /* AlertManager.swift in Sources */,
 				1CBB704F2AD5550600D2DEC8 /* MostPopularAppsTableViewCell.swift in Sources */,

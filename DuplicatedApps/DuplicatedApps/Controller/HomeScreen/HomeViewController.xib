@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DuplicatedApps" customModuleProvider="target">
             <connections>
                 <outlet property="homeTableView" destination="07l-JK-pPa" id="gHJ-5F-N9f"/>
-                <outlet property="listView" destination="k20-hS-iNj" id="JdF-Dw-Boy"/>
+                <outlet property="listView" destination="k20-hS-iNj" id="Cp0-c4-Fub"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="welcomeUserLabel" destination="avQ-Wp-kl4" id="cjC-4B-o8r"/>
             </connections>
@@ -45,8 +45,8 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k20-hS-iNj" customClass="CustomListView" customModule="DuplicatedApps" customModuleProvider="target">
-                    <rect key="frame" x="20" y="30" width="374" height="802"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="20" y="50" width="374" height="782"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -54,7 +54,7 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="k20-hS-iNj" secondAttribute="bottom" constant="30" id="6c6-JE-IOT"/>
                 <constraint firstItem="avQ-Wp-kl4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="9J4-8I-vuu"/>
-                <constraint firstItem="k20-hS-iNj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="9We-WH-PUI"/>
+                <constraint firstItem="k20-hS-iNj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="9We-WH-PUI"/>
                 <constraint firstAttribute="bottom" secondItem="07l-JK-pPa" secondAttribute="bottom" id="DSh-hN-SPe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k20-hS-iNj" secondAttribute="trailing" constant="20" id="Dx9-3a-RCD"/>
                 <constraint firstItem="gjA-wj-ATC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="Z1Y-Cm-ZN2"/>

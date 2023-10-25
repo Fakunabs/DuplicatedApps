@@ -60,9 +60,6 @@ extension AllAppsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.item == 0 {
-//            let newApp = AllApps(appImage: AppImages.facebookLiteIcon, position: "FE Developer", location: "A", mailContact: "A")
-//            allAppsCollectionView.append(newApp)
-//            collectionView.reloadData()
             delegate?.showListView()
         } else {
             print("b")

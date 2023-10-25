@@ -13,23 +13,15 @@ enum HomeSectionType: CaseIterable {
     case allapps
 }
 
-protocol HomeViewControllerDelegate: AnyObject {
-    func presentToViewController(viewController: UIViewController)
-}
-
 class HomeViewController: UIViewController {
     
     struct Constants {
         static let helloUserText = "Hello, Gustano"
     }
     
-//    let listView = ListAppsView.instanceFromNib()
-    
-    weak var delegate: HomeViewControllerDelegate?
-    
     private var headerHeight: CGFloat = 31
     
-    @IBOutlet weak var listView: CustomListView!
+    @IBOutlet private weak var listView: CustomListView!
     @IBOutlet private weak var homeTableView: UITableView!
     @IBOutlet private weak var welcomeUserLabel: UILabel!
     
@@ -64,6 +56,11 @@ class HomeViewController: UIViewController {
         // MARK: - Register Table View Cell
         homeTableView.register(UINib(nibName: MostPopularAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: MostPopularAppsTableViewCell.className)
         homeTableView.register(UINib(nibName: AllAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: AllAppsTableViewCell.className)
+    }
+    
+    private func addSubView() {
+        listView.delegate = self
+        listView.isHidden = true
     }
 }
 
@@ -142,14 +139,17 @@ extension HomeViewController {
         welcomeUserLabel.attributedText = attributedString
     }
     
-    private func addSubView() {
-//        self.listView.isHidden = true
-//        self.view.addSubview(self.listView)
-    }
+    
 }
 
 extension HomeViewController: AllAppsTableViewCellDelegate {
     func showListView() {
-//        self.listView.isHidden = false
+        listView.isHidden = false
+    }
+}
+
+extension HomeViewController: CustomListViewDelegate {
+    func didTapCloseListView() {
+        listView.isHidden = true
     }
 }

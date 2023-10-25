@@ -7,63 +7,64 @@
 
 import UIKit
 
-class CustomListView: UIView
-{
+protocol CustomListViewDelegate: AnyObject {
+    func didTapCloseListView()
+}
 
-    @IBOutlet var contentView: UIView!
+class CustomListView: UIView {
+
+    weak var delegate: CustomListViewDelegate?
+
+    @IBOutlet private weak var contentView: UIView!
+    @IBOutlet private weak var containerView: UIView!
+    @IBOutlet private weak var listAppsTableView: UITableView!
+    @IBOutlet private weak var appDescriptionView: AppDescriptionView!
     
-    @IBAction func doClose(_ sender: Any) {
+    @IBAction func didTapCloseListViewAction(_ sender: Any) {
+        delegate?.didTapCloseListView()
     }
-    @IBOutlet weak var listView: UITableView!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        setupListAppView()
     }
+    
     override func awakeFromNib() {
        super.awakeFromNib()
-       //custom logic goes here
     }
+    
     required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
-        setupView()
+        setupListAppView()
+        configTableView()
+        configListAppsView()
+        configAppDesriptionView()
     }
-//    required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//        setupView()
-//        fatalError("init(coder:) has not been implemented")
-//    }
-    private func setupView(){
-        Bundle.main.loadNibNamed("CustomListView", owner: self , options: nil)
+
+    private func setupListAppView(){
+        Bundle.main.loadNibNamed(CustomListView.className, owner: self , options: nil)
         addSubview(contentView)
               contentView.frame = self.bounds
               contentView.autoresizingMask = [ .flexibleHeight, .flexibleWidth]
-        listView.register(UINib(nibName: ListAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: ListAppsTableViewCell.className)
-//        contentvi
-        
     }
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }
 extension CustomListView {
     
     private func configTableView() {
-//        bt.frame = CGRect(x: 0, y: 010, width: 10, height: 10)
-        listView.register(UINib(nibName: ListAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: ListAppsTableViewCell.className)
-        listView.delegate = self
-        listView.dataSource = self
-        listView.backgroundColor = .white
-        listView.separatorStyle = .none
+        listAppsTableView.delegate = self
+        listAppsTableView.dataSource = self
+        listAppsTableView.separatorStyle = .none
+        listAppsTableView.register(UINib(nibName: ListAppsTableViewCell.className, bundle: nil), forCellReuseIdentifier: ListAppsTableViewCell.className)
+        
     }
     
     private func configListAppsView() {
-        self.layer.cornerRadius = 100
+        containerView.layer.cornerRadius = 10
+    }
+    
+    private func configAppDesriptionView() {
+        appDescriptionView.isHidden = true
+        
     }
 }
 
@@ -78,6 +79,7 @@ extension CustomListView: UITableViewDelegate, UITableViewDataSource {
         guard let listAppsCell = tableView.dequeueReusableCell(withIdentifier: ListAppsTableViewCell.className, for: indexPath) as? ListAppsTableViewCell else { return UITableViewCell()}
         return listAppsCell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
