@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppDescriptionView: UIView{
+class AppDescriptionView: UIView {
 
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var containerView: UIView!
@@ -21,6 +21,9 @@ class AppDescriptionView: UIView{
     
     override func awakeFromNib() {
        super.awakeFromNib()
+        setUpAppDescriptionView()
+        configAppDescriptionView()
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,7 +31,7 @@ class AppDescriptionView: UIView{
 
     }
     private func setUpAppDescriptionView() {
-        Bundle.main.loadNibNamed(AppDescriptionView.className, owner: self , options: nil)
+        Bundle.main.loadNibNamed("AppDescriptionView", owner: self , options: nil)
         addSubview(contentView)
               contentView.frame = self.bounds
               contentView.autoresizingMask = [ .flexibleHeight, .flexibleWidth]

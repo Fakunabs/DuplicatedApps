@@ -11,6 +11,7 @@ protocol CustomListViewDelegate: AnyObject {
     func didTapCloseListView()
 }
 
+
 class CustomListView: UIView {
 
     weak var delegate: CustomListViewDelegate?
@@ -64,7 +65,6 @@ extension CustomListView {
     
     private func configAppDesriptionView() {
         appDescriptionView.isHidden = true
-        
     }
 }
 
@@ -81,6 +81,7 @@ extension CustomListView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        print("a")
+        appDescriptionView.isHidden = false
     }
 }
