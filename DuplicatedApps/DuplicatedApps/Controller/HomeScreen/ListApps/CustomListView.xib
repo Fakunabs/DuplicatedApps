@@ -54,7 +54,7 @@
                         <constraint firstItem="Y1x-Wt-SLX" firstAttribute="centerX" secondItem="DTW-YS-Naj" secondAttribute="centerX" id="sOs-fN-F6i"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESG-Up-KDj">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESG-Up-KDj" customClass="AppDescriptionView" customModule="DuplicatedApps" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>

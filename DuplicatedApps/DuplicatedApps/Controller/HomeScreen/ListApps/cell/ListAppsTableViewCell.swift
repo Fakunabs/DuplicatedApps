@@ -9,6 +9,9 @@ import UIKit
 
 class ListAppsTableViewCell: UITableViewCell {
 
+    @IBOutlet private weak var appIconImage: UIImageView!
+    @IBOutlet private weak var appNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -17,4 +20,8 @@ class ListAppsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func setUpData(listApps: ListApps) {
+        appIconImage.image = listApps.appicon
+        appNameLabel.text = listApps.name
+    }
 }

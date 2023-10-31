@@ -7,11 +7,23 @@
 
 import UIKit
 
+protocol AppDescriptionViewDelegate: AnyObject {
+    func didTapCloseAppDescriptionView()
+}
+
 class AppDescriptionView: UIView {
+    
+    weak var delegate: AppDescriptionViewDelegate?
 
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var containerView: UIView!
-    
+    @IBOutlet private weak var descriptionTextField: UITextField!
+    @IBOutlet private weak var appIconImage: UIImageView!
+    @IBOutlet private weak var appNameLabel: UILabel!
+
+    @IBAction func didTapCloseAppDesriptionView(_ sender: Any) {
+        delegate?.didTapCloseAppDescriptionView()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,6 +35,7 @@ class AppDescriptionView: UIView {
        super.awakeFromNib()
         setUpAppDescriptionView()
         configAppDescriptionView()
+        configTextField()
 
     }
     
@@ -39,7 +52,19 @@ class AppDescriptionView: UIView {
 }
 
 extension AppDescriptionView {
+    
     private func configAppDescriptionView() {
         containerView.layer.cornerRadius = 10
+    }
+    
+    private func configTextField() {
+        descriptionTextField.layer.cornerRadius = 20
+    }
+    
+    func update(with app: ListApps?) {
+        if let app = app {
+            appIconImage.image = app.appicon
+            appNameLabel.text = app.name
+        }
     }
 }

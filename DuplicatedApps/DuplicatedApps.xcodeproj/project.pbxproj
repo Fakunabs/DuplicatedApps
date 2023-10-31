@@ -32,6 +32,7 @@
 		1C42B68D2ADE8A08008B7ACF /* ListAppsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C42B68B2ADE8A08008B7ACF /* ListAppsTableViewCell.xib */; };
 		1C4E6DAA2AD816E200CDC219 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4E6DA92AD816E200CDC219 /* AppFonts.swift */; };
 		1C5452EC2AD68F0600D6590C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5452EB2AD68F0600D6590C /* Users.swift */; };
+		1C5721962AF1694B001D569E /* ListApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5721952AF1694B001D569E /* ListApps.swift */; };
 		1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */; };
 		1C5F60D22ACBCA87001D1391 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */; };
 		1C6B02EE2ADA516E00EED468 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B02DC2ADA516B00EED468 /* Poppins-MediumItalic.ttf */; };
@@ -117,6 +118,7 @@
 		1C42B68B2ADE8A08008B7ACF /* ListAppsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListAppsTableViewCell.xib; sourceTree = "<group>"; };
 		1C4E6DA92AD816E200CDC219 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		1C5452EB2AD68F0600D6590C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		1C5721952AF1694B001D569E /* ListApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListApps.swift; sourceTree = "<group>"; };
 		1C5F60CF2ACBCA87001D1391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C5F60D02ACBCA87001D1391 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1C6B02DC2ADA516B00EED468 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				1C84296B2AD07EFA00D265F8 /* LoginUserRequest.swift */,
 				1C5452EB2AD68F0600D6590C /* Users.swift */,
 				1C99AF1C2AD958CE00BCA2FE /* AllApps.swift */,
+				1C5721952AF1694B001D569E /* ListApps.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 				1C74AF552ACB1139001C28E3 /* WelcomeScreenSlideCollectionViewCell.swift in Sources */,
 				1C0F1EF12AD45BD300342C90 /* SettingViewController.swift in Sources */,
 				1C84296C2AD07EFA00D265F8 /* LoginUserRequest.swift in Sources */,
+				1C5721962AF1694B001D569E /* ListApps.swift in Sources */,
 				1C5F60D12ACBCA87001D1391 /* LoginViewController.swift in Sources */,
 				1C113F5F2ACAC5B10010E79F /* Slide.swift in Sources */,
 				1C09E5A52AD0486A00C81723 /* RegisterUserRequest.swift in Sources */,

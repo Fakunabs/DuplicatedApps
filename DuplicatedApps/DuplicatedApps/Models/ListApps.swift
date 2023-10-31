@@ -2,7 +2,13 @@
 //  ListApps.swift
 //  DuplicatedApps
 //
-//  Created by Fakunabs on 30/10/2023.
+//  Created by Fakunabs on 31/10/2023.
 //
 
-import Foundation
+import UIKit
+
+struct ListApps {
+    let name: String
+    let link: String
+    let appicon: UIImage!
+}

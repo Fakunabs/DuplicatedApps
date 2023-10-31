@@ -58,6 +58,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="appIconImage" destination="Dfk-II-iPA" id="aYJ-hz-Wnc"/>
+                <outlet property="appNameLabel" destination="VQf-0U-B0D" id="c9m-ks-1RJ"/>
+            </connections>
             <point key="canvasLocation" x="42.748091603053432" y="-6.6901408450704229"/>
         </tableViewCell>
     </objects>
